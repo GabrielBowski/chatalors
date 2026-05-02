@@ -1,0 +1,243 @@
+/* import typographie */
+
+/* Poppins */
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Woff2/Poppins/Poppins-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Woff2/Poppins/Poppins-SemiBold.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Woff2/Poppins/Poppins-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Poppins */
+
+@font-face {
+  font-family: "Winky-Rough";
+  src: url("../../assets/fonts/Woff2/Winky_Rough/WinkyRough-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Winky-Rough";
+  src: url("../../assets/fonts/Woff2/Winky_Rough/WinkyRough-Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Winky-Rough";
+  src: url("../../assets/fonts/Woff2/Winky_Rough/WinkyRough-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Styles typographiques globaux */
+
+:root {
+  /* Font family principale des headings */
+  --font-heading-family: "Winky-Rough", sans-serif;
+
+  /* Body */
+  --font-body-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 var(--space-md);
+  font-weight: 600;
+  font-family: var(--font-heading-family);
+}
+
+p {
+  margin: 0 0 var(--space-md);
+  color: var(--color-text);
+  font-family: var(--font-body-family);
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-lg);
+}
+
+h1 {
+  font-family: var(--font-heading-family);
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 56px;
+  line-height: 100%;
+  color: var(--color-text-dark);
+}
+
+h2 {
+  font-family: var(--font-heading-family);
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 48px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: var(--font-heading-family);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+}
+
+h4 {
+  font-family: var(--font-heading-family);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 100%;
+}
+
+/* Body normal */
+.body {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  font-family: var(--font-body-family);
+}
+
+/* Body Bold */
+.body-bold {
+  font-family: var(--font-body-family);
+  text-transform: none!important;  
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+/* Body Italic */
+.body-italic {
+  font-family: var(--font-body-family);
+  font-weight: 400;
+  font-style: Italic;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+/* Body Underline */
+.body-underline {
+  font-family: var(--font-body-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+
+  text-decoration-skip-ink: auto;
+}
+
+/* Navigation */
+.nav {
+  font-family: var(--font-body-family);
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 100%;
+}
+
+/* Button Cap */
+.button-cap {
+  font-family: var(--font-body-family);
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+/* Button Normal */
+.button-normal {
+  font-family: var(--font-body-family);
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 100%;
+}
+
+/* Button Underline */
+.button-underline {
+  font-family: var(--font-body-family);
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 100%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 16%;
+  text-decoration-skip-ink: auto;
+}
+
+input::placeholder{
+  font-family: var(--font-body-family);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-family: var(--font-heading-family);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    line-height: 100%;
+  }
+
+  h2 {
+    font-family: var(--font-heading-family);
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 30px;
+    line-height: 100%;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-family: var(--font-heading-family);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 100%;
+  }
+
+  h4 {
+    font-family: var(--font-heading-family);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 100%;
+  }
+}

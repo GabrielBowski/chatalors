@@ -1,0 +1,68 @@
+/* 
+  VARIABLES GLOBALES (design tokens)
+  - Inspirez-vous directement de la maquette Figma 
+    (couleurs, typos, espaces, rayons, ombres, etc.)
+  
+  💡 POURQUOI UTILISER REM AU LIEU DE PX ?
+  - Accessibilité : respecte les préférences de taille de police de l'utilisateur
+  - Maintenabilité : changer la taille de base fait s'adapter tout le reste
+  - Conversion : 1rem = 16px (taille de base du navigateur)
+*/
+
+:root {
+  /* Couleurs principales */
+  --color-primary: #a6c7e7;
+  --color-secondary: #ffb6c2;
+  --color-text-dark: #161519;
+  --color-text-clear: #f9eff0;
+  --color-accent1: #c24c6a;
+  --color-accent2: #355169;
+  --color-button-outlined-click: #726d6c;
+  --color-field: #674b52;
+  --color-button-accent1-click: #da768d;
+  --color-button-accent2-click: #62809b;
+
+  /* Gris et fonds */
+  --color-background: #fdf0e8;
+
+  /* Espaces (système basé sur 0.5rem = 8px) */
+  --space-xxs: 0.25rem; /* 4px */
+  --space-xs: 0.5rem; /* 8px */
+  --space-sm: 0.75rem; /* 12px */
+  --space-md: 1rem; /* 16px */
+  --space-lg: 1.5rem; /* 24px */
+  --space-xl: 2rem; /* 32px */
+  --space-mxl: 2.5rem; /* 40px */
+  --space-xxl: 3rem; /* 48px */
+  --space-xxxl : 4rem; /*64px*/
+  --space-max: 5rem; /* 80px */
+  --space-supermax: 10rem; /* 160px */
+--space-ultra: 15rem; /* 240px */
+
+  /* Radius (en rem pour cohérence) */
+  --radius-sm: 0.25rem; /* 4px */
+  --radius-md: 0.5rem; /* 8px */
+  --radius-lg: 1rem; /* 16px */
+  --radius-xl: 2rem; /* 32px */
+  --radius-xxl: 3rem; /* 48px */
+
+  /* Ombres (converties en rem pour cohérence) */
+  --shadow-soft: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08); /* 0 4px 12px */
+
+  --border-radius-card: 32px;
+  --border-radius-button: 16px;
+  --border-radius-faq: 8px;
+  --padding-inline-ddl: 48px;
+  --padding-card: 32px;
+  --padding-top-main: 104px;
+  --padding-bottom-main: 56px;
+  --padding-button-top-bottom: 8px;
+  --gap-cards: 32px;
+  --gap-card-intern: 16px;
+  --gap-elements: 8px;
+  --gap-elements-mobile: 24px;
+  --margin-inline-mobile: 16px;
+  --padding-inline-ddl-mobile: 16px;
+  --padding-card-mobile: 24px;
+  --gap-frame: 32px;
+}

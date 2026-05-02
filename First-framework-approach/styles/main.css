@@ -1,0 +1,34 @@
+/* 
+  FICHIER PRINCIPAL CSS
+  - N'écrivez pas tous vos styles ici.
+  - Importez les autres fichiers pour garder un projet clair.
+*/
+
+@import url("./utils/_variables.css");
+@import url("./utils/_helpers.css");
+
+@import url("./base/_reset.css");
+@import url("./base/_typography.css");
+
+@import url("./layout/_grid.css");
+@import url("./layout/_layout.css");
+
+@import url("./components/_button.css");
+@import url("./components/_cards.css");
+@import url("./components/_header.css");
+@import url("./components/_footer.css");
+@import url("./components/_image_decorative.css");
+
+@import url("./components/_hero.css");
+@import url("./components/_accordion.css"); /* 
+  Si vous avez des styles très spécifiques à une seule page,
+  vous pouvez créer un fichier dans styles/pages/ et l'importer ici.
+*/
+@import url("./components/_residents.css");
+
+@import url("./components/_image.css");
+
+@import url("./components/styles.css");
+
+@import url("./components/_timeline.css");
+@import url("./components/_carrousel.css");

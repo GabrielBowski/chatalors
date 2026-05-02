@@ -1,0 +1,539 @@
+/* PAGE ACCUEIL */
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.bouton-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.title-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.decoration_tasse::after {
+  content: "";
+  position: absolute;
+  bottom: 10%;
+  right: -25%;
+
+  width: 50%;
+  height: 50%;
+
+  background-color: var(--color-accent2);
+
+  -webkit-mask: url("../../assets/svg/mug.svg") no-repeat center;
+  mask: url("../../assets/svg/mug.svg") no-repeat center;
+
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  transform: rotate(35deg);
+}
+
+.decoration_cuillere::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: -37px;
+
+  width: 80px;
+  height: 80px;
+
+  background-color: var(--color-secondary);
+
+  -webkit-mask: url("../../assets/svg/spoon.svg") no-repeat center;
+  mask: url("../../assets/svg/spoon.svg") no-repeat center;
+
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  transform: rotate(35deg);
+}
+
+.decoration_vague2::after {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  right: 85%;
+
+  width: 27%;
+  height: 27%;
+
+  background-color: var(--color-secondary);
+
+  -webkit-mask: url("../../assets/svg/wavy-line1.svg") no-repeat center;
+  mask: url("../../assets/svg/wavy-line1.svg") no-repeat center;
+
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  transform: rotate(-20deg);
+}
+
+.decoration_vague3::after {
+  content: "";
+  position: absolute;
+  bottom: 85%;
+  right: -10%;
+
+  width: 27%;
+  height: 27%;
+
+  background-color: var(--color-primary);
+
+  -webkit-mask: url("../../assets/svg/wavy-line1.svg") no-repeat center;
+  mask: url("../../assets/svg/wavy-line1.svg") no-repeat center;
+
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  transform: rotate(-20deg);
+}
+
+.decor-patte-section {
+  position: absolute;
+  top: 0%;
+  right: 2%;
+  width: 9vw;
+  max-width: 137px;
+  transform: rotate(-90deg);
+  color: var(--color-accent2);
+}
+
+.decor-patte-section .coussinnet {
+  color: var(--color-text-clear);
+}
+
+.decor-patte-carrousel {
+  position: absolute;
+  top: 0%;
+  right: 6%;
+  width: 9vw;
+  max-width: 224px;
+  transform: rotate(-15deg);
+  color: var(--color-secondary);
+}
+
+
+.decor_poisson {
+  position: absolute;
+  top: 78%;
+  right: 50%;
+  width: 12vw;
+  width: 200px;
+  transform: rotate(20deg);
+  color: var(--color-secondary);
+  z-index: 1;
+}
+
+.decoration_queue_bleu {
+  position: absolute;
+  top: 65%;
+  right: 93%;
+  width: 12vw;
+  width: 200px;
+  transform: scaleX(-1) rotate(-20deg);
+  color: var(--color-accent2);
+  z-index: 1;
+}
+
+.decor-grille-rond {
+  position: absolute;
+  top: 80%;
+  right: 84%;
+  width: 12vw;
+  width: 200px;
+  transform: rotate(20deg);
+  color: var(--color-accent2);
+  z-index: 2;
+}
+
+
+
+
+/* PAGE NOS RÉSIDNETS */
+.decoration_vague::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+
+  width: 80px;
+  height: 80px;
+
+  background-color: var(--color-secondary);
+
+  -webkit-mask: url("../../assets/svg/wavy-line1.svg") no-repeat center;
+  mask: url("../../assets/svg/wavy-line1.svg") no-repeat center;
+
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  transform: rotate(90deg);
+}
+
+.section-decor {
+  position: relative;
+  /* pour que le décor soit positionné */
+  height: 100px;
+  /* ou auto selon ton SVG */
+  overflow: visible;
+  /* important si le décor dépasse */
+}
+
+.section-decor svg {
+  color: var(--color-primary);
+  position: absolute;
+  bottom: 0;
+  left: 90%;
+  transform: translateX(-50%) rotate(-35deg);
+  width: 15vw;
+  /* 8% de la largeur de l’écran */
+  max-width: 150px;
+  height: auto;
+}
+
+.section_main {
+  position: relative;
+}
+
+.decor-left-top {
+  position: absolute;
+  top: 6%;
+  left: 4%;
+  transform: translateX(-50%) rotate(15deg) scaleX(-1);
+  width: 20vw;
+  max-width: 200px;
+
+  color: var(--color-accent2);
+  z-index: 1;
+}
+
+.decor-left-mid {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+  transform: translateX(-50%) rotate(-15deg) scaleX(-1);
+  width: 5vw;
+  max-width: 80px;
+  color: var(--color-accent2);
+  z-index: 1;
+}
+
+.decor-left-bottom {
+  position: absolute;
+  top: 80%;
+  left: 2%;
+  transform: translateX(-50%) rotate(25deg);
+  width: 15vw;
+  max-width: 180px;
+  color: var(--color-background);
+  z-index: 1;
+}
+
+.decor-right-top {
+  position: absolute;
+  top: 23%;
+  right: -3%;
+  transform: rotate(-50deg);
+  width: 15vw;
+  max-width: 180px;
+  color: var(--color-secondary);
+  z-index: 1;
+}
+
+.decor-right-mid {
+  position: absolute;
+  top: 33%;
+  right: 2%;
+  width: 10vw;
+  max-width: 100px;
+  color: var(--color-accent2);
+  z-index: 1;
+}
+
+.decor-right-bottom {
+  position: absolute;
+  bottom: 0%;
+  right: 3%;
+  transform: rotate(-25deg);
+  width: 15vw;
+  max-width: 180px;
+  color: var(--color-secondary);
+  z-index: 4;
+}
+
+.decor-footer {
+  width: 10vw;
+  max-width: 80px;
+  color: var(--color-accent2);
+}
+
+.decor-flex {
+  display: flex;
+  gap: 0.6rem;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.section_main {
+  position: relative;
+}
+
+.timeline-grid {
+  z-index: 2;
+}
+
+.decor_diagramme_mid {
+  position: absolute;
+  top: 50%;
+  left: -1%;
+  transform: rotate(25deg);
+  width: 15vw;
+  max-width: 120px;
+  color: var(--color-secondary);
+  z-index: 1;
+}
+
+.decor_diagramme_top {
+  color: var(--color-primary);
+  position: absolute;
+  top: 25%;
+  right: 20%;
+  transform: rotate(0deg);
+  width: 15vw;
+  max-width: 100px;
+  z-index: 1;
+}
+
+.cellule {
+  z-index: 5;
+}
+
+.decor_diagramme_bottom {
+  color: var(--color-secondary);
+  position: absolute;
+  bottom: -12%;
+  right: 5%;
+  transform: rotate(-5deg);
+  width: 15vw;
+  max-width: 250px;
+  z-index: 1;
+}
+
+.nuage-container {
+  position: relative;
+  padding-bottom: var(--space-xl);
+}
+
+.deco-svg-breadcrumbs {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  color: var(--color-accent2);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.decor-apropos-left-top {
+  position: absolute;
+  top: 15%;
+  left: 2%;
+  transform: translateX(-50%) rotate(35deg) scaleX(-1);
+  width: 15vw;
+  max-width: 200px;
+
+  color: var(--color-accent2);
+  z-index: 1;
+}
+
+.decor-apropos-left-bottom {
+  position: absolute;
+  top: 40%;
+  left: 3%;
+  transform: translateX(-50%) rotate(5deg) scaleX(-1);
+  width: 15vw;
+  max-width: 180px;
+  color: var(--color-accent2);
+  z-index: 1;
+}
+
+.decor-apropos-left-bottom-2 {
+  position: absolute;
+  bottom: 0%;
+  left: 2%;
+  transform: rotate(-25deg);
+  width: 15vw;
+  max-width: 100px;
+  color: var(--color-accent2);
+  z-index: 1;
+}
+
+.decor-apropos-right-bottom {
+  position: absolute;
+  bottom: 0%;
+  right: 3%;
+  transform: rotate(-25deg);
+  width: 15vw;
+  max-width: 180px;
+  color: var(--color-accent2);
+  z-index: 3;
+}
+
+.decor-apropos-right-top {
+  position: absolute;
+  top: 15%;
+  right: 0%;
+  transform: rotate(-100deg);
+  width: 15vw;
+  max-width: 100px;
+  color: var(--color-accent2);
+  z-index: 1;
+}
+
+
+@media (max-width: 1024px) {
+  .decor_poisson {
+    width: 200px;
+    right: 78%;
+    top: 95%
+  }
+
+  .decoration_queue_bleu {
+    position: absolute;
+    top: -28%;
+    right: -10%;
+    width: 12vw;
+    width: 200px;
+    transform: rotate(-30deg);
+  }
+
+  .decor-apropos-right-bottom {
+    z-index: 1;
+  }
+
+  .decor-right-bottom {
+    z-index: 1;
+  }
+
+  .decor-grille-rond {
+    top: 85%;
+    right: 84%;
+    width: 12vw;
+    width: 180px;
+  }
+}
+
+/* Styles pour mobile */
+@media (max-width: 768px) {
+  .decor-footer {
+    display: none;
+  }
+
+  .decor_diagramme_mid {
+    display: none;
+  }
+
+  .decor_diagramme_top {
+    display: none;
+  }
+
+  .decor-apropos-right-bottom {
+    z-index: 4;
+  }
+
+  .decor-left-top {
+
+    top: 6.5%;
+    width: 25vw;
+    max-width: 200px;
+
+  }
+
+  .decor-right-top {
+
+    right: -13%;
+    transform: rotate(-30deg);
+    width: 22vw;
+
+  }
+
+  .decor-right-mid {
+
+    top: 26%;
+    right: 0%;
+    width: 5vw;
+    max-width: 100px;
+
+  }
+
+  .decor_diagramme_bottom {
+    bottom: 59%;
+    right: 5%;
+    width: 20vw;
+  }
+
+  .deco-svg-breadcrumbs {
+    width: 90%;
+  }
+
+  .decoration_tasse::after {
+    display: none;
+  }
+
+  .decor-left-mid {
+    display: none;
+  }
+
+  .section-decor svg {
+    left: 95%;
+  }
+
+  .decor-left-bottom {
+    transform: rotate(15deg);
+    left: -3%;
+  }
+
+  .decor-right-bottom {
+
+    bottom: -1.5%;
+
+  }
+
+  .decor-apropos-left-top {
+    display: none;
+  }
+
+  .decor-apropos-right-top {
+    display: none;
+  }
+
+  .decor-apropos-left-bottom-2 {
+    display: none;
+  }
+
+  .decor-apropos-left-bottom {
+
+    top: 13%;
+  }
+
+  .decor_poisson {
+    width: 200px;
+    right: 78%;
+    top: 95%
+  }
+
+  .decoration_queue_bleu {
+    position: absolute;
+    top: -20%;
+    right: -17%;
+    width: 12vw;
+    width: 200px;
+    transform: rotate(-30deg);
+  }
+
+  .decor-grille-rond {
+    display: none;
+  }
+}

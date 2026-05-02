@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/main.css" />
+  <title>Nos résidents</title>
+</head>
+
+<body>
+  <header class="header header--sticky">
+    <div class="header__logo">
+      <a href="index.html">
+        <img src="./assets/logo/logo.svg" alt="Retour à la page d'accueil" />
+      </a>
+    </div>
+
+    <!-- bouton burger -->
+    <button class="burger" id="burger" aria-label="Ouvrir le menu">
+      <img src="./assets/svg/burger-menu.svg" alt="Menu" id="burger-icon" />
+    </button>
+
+    <nav class="header__nav" id="nav">
+      <ul>
+        <li>
+          <a href="residents.html" class="header__link header__link--active">Nos résidents</a>
+        </li>
+        <li>
+          <a href="pages/exemple-page.html" class="header__link">Menu</a>
+        </li>
+        <li>
+          <a href="pages/exemple-page.html" class="header__link">Règlement</a>
+        </li>
+        <li>
+          <a href="a_propos.html" class="header__link">À propos</a>
+        </li>
+        <li>
+          <a href="pages/exemple-page.html" class="button button--primary">Réserver</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="overlay" id="overlay"></div>
+
+  <main class="main">
+    <section class="section_main">
+      <h1>Nos résidents</h1>
+
+      <div class="grid_residents">
+        <div class="image-wrapper decoration_vague">
+          <img class="image_radius decoration_vague" src="./assets/images/residents-hero-header_1.webp" alt="" />
+        </div>
+
+        <div class="content">
+          <ol>
+            <li class="body">
+              Prenez le temps de rencontrer nos chats au bar, d’échanger avec
+              notre équipe et de vérifier que votre mode de vie correspond aux
+              besoins du chat.
+            </li>
+
+            <li class="body">
+              Si le coup de cœur est confirmé, nous vous mettons en relation
+              avec la SPA. Un court entretien et un dossier d’adoption
+              permettent de s’assurer du bien-être futur du chat.
+            </li>
+
+            <li class="body">
+              Une fois l’adoption validée, vous pouvez accueillir votre
+              nouveau compagnon chez vous.
+            </li>
+          </ol>
+
+          <a href="#" class="button button--secondary">Entamer les démarches
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-decor">
+      <svg viewBox="0 0 81 96" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M42.4361 94.4411C45.0361 94.2411 64.8362 95.1411 68.0361 93.6411C72.1361 91.7411 70.1361 63.7411 72.0361 58.6411C73.9361 53.5411 83.9361 24.6411 78.7361 16.2411C73.5361 7.74109 65.9361 7.5411 65.9361 7.5411C65.9361 7.5411 62.5361 -2.0589 49.0361 4.5411C48.6361 4.3411 41.9361 -5.95891 30.9361 5.1411C30.7361 4.9411 15.8361 0.441094 15.8361 9.24109C15.8361 9.24109 0.936142 9.6411 0.036142 17.9411C-0.863858 26.2411 15.3361 71.6411 16.1361 73.8411C16.9361 76.0411 15.5361 84.3411 15.2361 89.4411C14.9361 94.5411 15.3361 96.3411 23.9361 95.6411C32.5361 94.9411 42.2361 94.4411 42.2361 94.4411H42.4361Z"
+          fill="currentColor" />
+      </svg>
+    </div>
+
+    <img class="nuage" src="./assets/svg/nuage_residents.svg" alt="" />
+
+    <div class="fond">
+      <section class="section_main">
+        <svg viewBox="0 0 81 112" class="decor-left-top" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+          <path
+            d="M75.8561 98.5299C68.9561 90.3299 63.5561 81.0299 60.1561 70.9299C58.4561 66.0299 57.1561 60.5299 56.1561 55.2299C55.0561 49.8299 54.3561 44.4299 53.8561 39.0299C53.6561 36.3299 53.4561 33.6299 53.4561 30.8299C53.4561 29.4299 53.4561 28.1299 53.4561 26.7299C53.4561 25.1299 53.3561 23.3299 53.0561 21.7299C51.8561 15.0299 47.8561 8.8299 42.1561 4.82991C36.4561 0.829905 29.0561 -0.870096 21.8561 0.429904C14.5561 1.7299 7.95606 6.1299 3.55606 12.3299C1.45606 15.1299 -0.343936 19.3299 0.0560643 22.8299C0.156064 23.7299 0.456065 24.5299 0.756065 25.2299C1.15607 25.9299 1.65607 26.5299 2.35607 27.0299C3.65607 28.0299 5.45606 28.3299 7.95606 28.3299C9.95606 28.3299 11.4561 27.7299 12.5561 27.2299C13.6561 26.6299 14.3561 26.0299 14.8561 25.2299C15.8561 23.8299 16.2561 22.0299 17.0561 20.6299C18.7561 17.5299 21.5561 15.2299 24.6561 14.2299C26.1561 13.7299 27.9561 13.5299 29.6561 13.7299C31.3561 13.8299 33.0561 14.3299 34.5561 15.1299C37.6561 16.7299 40.1561 19.6299 41.2561 23.0299C41.8561 24.8299 41.8561 26.0299 41.9561 29.3299C42.0561 32.2299 42.2561 35.0299 42.4561 37.9299C42.9561 43.9299 43.6561 49.8299 44.7561 55.7299C45.3561 58.6299 45.9561 61.6299 46.5561 64.5299C47.2561 67.4299 48.0561 70.3299 48.9561 73.3299C52.7561 85.2299 59.1561 96.2299 67.3561 105.53C69.9561 108.63 73.1561 114.23 78.2561 109.03C83.7561 103.33 78.2561 101.23 76.0561 98.5299H75.8561Z"
+            fill="currentColor" />
+        </svg>
+
+        <svg viewBox="0 0 81 96" class="decor-left-mid" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M42.4361 94.4411C45.0361 94.2411 64.8362 95.1411 68.0361 93.6411C72.1361 91.7411 70.1361 63.7411 72.0361 58.6411C73.9361 53.5411 83.9361 24.6411 78.7361 16.2411C73.5361 7.74109 65.9361 7.5411 65.9361 7.5411C65.9361 7.5411 62.5361 -2.0589 49.0361 4.5411C48.6361 4.3411 41.9361 -5.95891 30.9361 5.1411C30.7361 4.9411 15.8361 0.441094 15.8361 9.24109C15.8361 9.24109 0.936142 9.6411 0.036142 17.9411C-0.863858 26.2411 15.3361 71.6411 16.1361 73.8411C16.9361 76.0411 15.5361 84.3411 15.2361 89.4411C14.9361 94.5411 15.3361 96.3411 23.9361 95.6411C32.5361 94.9411 42.2361 94.4411 42.2361 94.4411H42.4361Z"
+            fill="currentColor" />
+        </svg>
+
+        <svg viewBox="0 0 101 110" class="decor-left-bottom" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M100.53 30.4953C100.13 19.5953 95.7296 10.9953 87.3296 5.89528C73.6296 -2.80472 52.7296 -0.804724 38.9296 4.99528L37.6296 5.59528C35.4296 6.49528 33.3296 7.49528 31.3296 7.59528C29.3296 7.79528 27.0296 7.59528 24.6296 7.59528C22.2296 7.59528 21.1296 7.39528 19.4296 7.39528C15.9296 7.39528 12.2296 8.49528 9.4296 10.6953C2.4296 16.0953 0.529601 25.8953 0.129601 34.1953C-0.470399 43.5953 0.829596 53.6953 7.9296 60.6953C10.5296 63.2953 13.8296 64.9953 16.6296 67.1953C18.6296 68.8953 19.7296 71.0953 19.9296 73.6953C19.9296 75.3953 20.1296 76.7953 20.1296 78.2953C20.5296 86.7953 23.4296 96.4953 31.0296 101.295C50.3296 113.495 82.5296 113.195 91.2296 88.0953C91.2296 87.4953 91.6296 87.1953 91.6296 86.5953C98.1296 64.8953 101.23 46.5953 100.53 30.4953ZM28.4296 30.4953C28.4296 31.5953 28.4296 32.6953 28.2296 33.7953V34.6953C28.2296 36.3953 27.8296 38.1953 27.5296 39.8953C27.5296 40.7953 27.3296 41.5953 27.1296 42.4953C27.1296 43.1953 27.1296 43.9953 26.5296 44.4953C26.1296 45.0953 25.8296 44.6953 25.4296 44.4953C21.7296 40.9953 18.9296 34.6953 22.1296 29.9953C23.0296 28.6953 24.1296 27.9953 25.8296 28.0953H27.8296C28.5296 28.4953 28.4296 29.5953 28.4296 30.2953V30.4953ZM86.7296 25.3953C86.1296 27.2953 84.4296 28.3953 82.7296 29.2953C71.2296 35.7953 56.0296 34.9953 45.1296 27.5953C35.5296 21.0953 48.4296 16.4953 54.2296 15.1953C62.7296 13.2953 71.8296 14.4953 80.0296 17.3953C81.9296 18.0953 83.7296 18.8953 85.0296 20.1953C86.5296 21.4953 87.2296 23.4953 86.7296 25.3953Z"
+            fill="currentColor" />
+        </svg>
+
+        <svg class="decor-right-top" viewBox="0 0 41 39" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M32.4302 4.81645C35.5192 3.06845 41.0662 6.23645 37.7542 11.2055C34.4412 16.1745 26.1602 8.36645 32.4302 4.81645Z"
+            fill="currentColor" />
+          <path
+            d="M20.9552 0.284423C23.8642 -0.940577 29.4732 1.82242 26.1602 7.97442C22.8472 14.1264 18.1152 10.8134 18.1152 6.08142C18.1152 1.34942 18.7072 1.23042 20.9542 0.284423H20.9552Z"
+            fill="currentColor" />
+          <path
+            d="M6.25733 5.00445C8.21433 3.45545 14.8933 4.53145 15.1303 9.26345C15.3673 13.9954 12.1723 18.9645 8.15033 16.5985C4.12833 14.2325 3.41833 7.25245 6.25733 5.00445Z"
+            fill="currentColor" />
+          <path
+            d="M0.496112 18.8014C1.51911 17.1524 6.76611 17.3814 5.22811 21.4044C3.69011 25.4264 -1.63389 22.2324 0.496112 18.8014Z"
+            fill="currentColor" />
+          <path
+            d="M18.115 18.0804C23.858 15.9474 35.082 16.8964 37.342 18.9414C39.603 20.9864 45.219 32.2204 30.147 34.3344C23.241 35.3034 21.411 41.2234 12.799 36.7024C4.18696 32.1814 11.159 20.6634 18.115 18.0804Z"
+            fill="currentColor" />
+        </svg>
+
+        <svg viewBox="0 0 32 31" fill="currentColor" class="decor-right-mid" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12.2101 0.0217685C13.6361 0.216769 21.0421 7.24877 15.0641 10.1528C7.02309 14.0588 7.29909 5.89877 8.31309 3.69877C9.32709 1.49877 10.4841 -0.214231 12.2101 0.0217685Z"
+            fill="currentColor" />
+          <path
+            d="M24.2571 9.48076C25.9251 9.98376 28.3141 15.5228 22.9471 16.7038C17.5801 17.8838 18.0951 12.5018 19.0401 11.1038C19.9861 9.70576 21.7041 8.71076 24.2561 9.48076H24.2571Z"
+            fill="currentColor" />
+          <path
+            d="M26.0269 19.5998C27.3679 18.5088 30.0269 19.1718 30.9409 20.4908C31.8549 21.8098 30.1109 24.6468 27.7279 24.2148C25.3449 23.7828 23.3209 21.8008 26.0269 19.5998Z"
+            fill="currentColor" />
+          <path
+            d="M1.44711 5.32776C2.61211 4.45476 4.83811 5.71177 4.58211 7.12677C4.32511 8.54177 3.21611 10.4168 1.42911 9.24676C-0.357893 8.07676 0.290106 6.19476 1.44711 5.32776Z"
+            fill="currentColor" />
+          <path
+            d="M12.408 13.4728C16.056 15.4178 26.782 23.5878 23.263 28.3528C19.743 33.1178 11.602 28.5278 9.93303 27.1258C8.26403 25.7248 -0.89397 20.6758 0.0710299 16.3638C1.03603 12.0518 3.55703 8.75376 12.408 13.4728Z"
+            fill="currentColor" />
+        </svg>
+
+        <svg viewBox="0 0 96 94" fill="currentColor" class="decor-right-bottom" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M1.6 14.6006C1.6 18.8006 5.7 24.0006 9.1 26.5006C2.1 31.3006 -4.7 41.0006 7.6 47.8006C3.4 51.7006 -1.1 62.9006 6.1 68.3006C2.7 70.6006 0 78.6006 0 82.8006C0 90.1006 7.9 93.1006 15.2 93.1006C22.5 93.1006 22.6 87.6006 25.1 84.2006C29 96.2006 41.1 95.2006 46.5 87.8006C51.3 94.8006 65 93.6006 67.8 84.5006C70.1 87.9006 76 92.9006 80.1 92.9006C87.4 92.9006 93 87.4006 93 80.1006C93 72.8006 88.3 71.0006 84.9 68.5006C91.9 63.7006 93.3 53.8006 86.1 46.2006C90.6 44.1006 103.1 25.2006 83.5 25.2006C86.9 22.9006 95.4 21.5006 95.4 17.4006C95.4 10.1006 87.2 0.100601 79.9 0.100601C72.6 0.100601 70.1 3.3006 67.6 6.7006C65.9 -1.7994 51.1 -0.299399 46.4 6.7006C41.6 -0.299399 30.6 0.800601 25.2 6.7006C24.1 -0.199399 16.1 0.000600482 11.9 0.000600482C4.6 0.000600482 1.5 7.3006 1.5 14.6006H1.6ZM60 60.3006C60 58.8006 60.9 56.8006 62.4 56.8006C63.9 56.8006 66.3 58.4006 66.3 59.9006V61.5006C66.3 63.0006 65.1 65.3006 63.6 65.3006C62.1 65.3006 60.1 62.5006 60.1 61.0006V60.4006L60 60.3006ZM58.6 28.6006C58.6 26.2006 59.8 25.8006 61.3 25.8006C62.8 25.8006 65 26.2006 65 27.7006L65.2 29.3006C65.2 30.8006 65.1 33.1006 63.6 33.1006C62.1 33.1006 59.6 32.9006 58.6 29.3006V28.6006ZM43.4 46.2006C43.4 44.7006 45.7 42.4006 47.1 42.4006C48.5 42.4006 49.9 46.2006 49.9 47.7006V49.2006C49.9 50.7006 48.1 51.4006 46.6 51.4006C45.1 51.4006 43.4 48.5006 43.4 47.0006V46.3006V46.2006ZM27.1 59.7006C27.1 58.2006 28.9 57.3006 30.3 57.3006C31.7 57.3006 33.7 59.5006 33.7 61.0006V62.3006C33.7 63.8006 31.8 66.4006 30.3 66.4006C28.8 66.4006 27.1 63.8006 27.1 62.4006V59.7006ZM27.7 28.0006C27.7 26.5006 29.7 24.4006 31.2 24.4006C32.7 24.4006 34.1 26.9006 34.1 28.4006V29.5006C34.1 31.0006 32.1 32.9006 30.6 32.9006C29.1 32.9006 27.7 30.3006 27.7 28.8006V28.0006Z"
+            fill="currentColor" />
+        </svg>
+
+        <div class="heading">
+          <h2>Découvrez nos résidents</h2>
+
+          <p class="body">
+            Nos résidents sont également à l’adoption, vous pouvez parcourir
+            leur profil, afin de peut-être trouvé votre nouveau compagnon !
+          </p>
+        </div>
+
+        <div class="container_card">
+          <article class="card-resident card-resident--detailed">
+            <div class="card-resident__top">
+              <div class="card-resident__info">
+                <h2 class="card-resident__name">JACKY</h2>
+
+                <div class="card-resident__meta">
+                  <span>Mâle</span>
+                  <span>-</span>
+                  <span>3 ans</span>
+                </div>
+
+                <ul class="card-resident__compatibility">
+                  <li class="is-ok">
+                    <span><img src="./assets/svg/check.svg" alt="" /></span>
+                    Enfants
+                  </li>
+                  <li class="is-not-ok">
+                    <span><img src="./assets/svg/cross.svg" alt="" /></span>
+                    Chiens
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card-resident__image">
+                <img src="./assets/images/cat1.webp" alt="Photo de Jacky" />
+              </div>
+            </div>
+
+            <p class="card-resident__description">
+              Jacky est un chat affectueux et joueur. Toujours partant pour
+              une séance de jeu ou un moment de tendresse...
+            </p>
+          </article>
+
+          <article class="card-resident card-resident--detailed">
+            <div class="card-resident__top">
+              <div class="card-resident__info">
+                <h2 class="card-resident__name">RONALD</h2>
+
+                <div class="card-resident__meta">
+                  <span>Mâle</span>
+                  <span>-</span>
+                  <span>10 mois</span>
+                </div>
+
+                <ul class="card-resident__compatibility">
+                  <li class="is-ok">
+                    <span><img src="./assets/svg/cross.svg" alt="" /></span>
+                    Enfants
+                  </li>
+                  <li class="is-not-ok">
+                    <span><img src="./assets/svg/cross.svg" alt="" /></span>
+                    Chiens
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card-resident__image">
+                <img src="./assets/images/cat2.webp" alt="Photo de Jacky" />
+              </div>
+            </div>
+
+            <p class="card-resident__description">
+              Ronald est un chat très timide et sensible. Il observe beaucoup
+              avant d’accorder sa confiance et préfère prendre son temps pour
+              s’approcher des humains. Avec patience et calme, il pourra peu à
+              peu venir vers vous et vous offrir de jolis moments de
+              complicité.
+            </p>
+          </article>
+
+          <article class="card-resident card-resident--detailed">
+            <div class="card-resident__top">
+              <div class="card-resident__info">
+                <h2 class="card-resident__name">NALA</h2>
+
+                <div class="card-resident__meta">
+                  <span>Femelle</span>
+                  <span>-</span>
+                  <span>7 mois</span>
+                </div>
+
+                <ul class="card-resident__compatibility">
+                  <li class="is-ok">
+                    <span><img src="./assets/svg/check.svg" alt="" /></span>
+                    Enfants
+                  </li>
+                  <li class="is-not-ok">
+                    <span><img src="./assets/svg/check.svg" alt="" /></span>
+                    Chiens
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card-resident__image">
+                <img src="./assets/images/cat3.webp" alt="Photo de Jacky" />
+              </div>
+            </div>
+
+            <p class="card-resident__description">
+              Très sociable et pleine d’énergie, Nala adore jouer avec tout ce
+              qui traîne à sa portée. Curieuse et malicieuse, elle ne résiste
+              jamais à l’envie de transformer vos affaires en jouets. Gardez
+              un œil sur vos sacs… et préparez-vous à rire !
+            </p>
+          </article>
+
+          <article class="card-resident card-resident--detailed">
+            <div class="card-resident__top">
+              <div class="card-resident__info">
+                <h2 class="card-resident__name">ENOR</h2>
+
+                <div class="card-resident__meta">
+                  <span>Femelle</span>
+                  <span>-</span>
+                  <span>8 mois</span>
+                </div>
+
+                <ul class="card-resident__compatibility">
+                  <li class="is-ok">
+                    <span><img src="./assets/svg/check.svg" alt="" /></span>
+                    Enfants
+                  </li>
+                  <li class="is-not-ok">
+                    <span><img src="./assets/svg/check.svg" alt="" /></span>
+                    Chiens
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card-resident__image">
+                <img src="./assets/images/cat4.webp" alt="Photo de Jacky" />
+              </div>
+            </div>
+
+            <p class="card-resident__description">
+              Enor est une chatte timide mais très câline. Discrète au premier
+              abord, elle a pourtant beaucoup d’affection à offrir à ceux qui
+              savent faire preuve de douceur et de patience. Une fois en
+              confiance, elle apprécie pleinement les moments de tendresse.
+            </p>
+          </article>
+
+          <article class="card-resident card-resident--detailed">
+            <div class="card-resident__top">
+              <div class="card-resident__info">
+                <h2 class="card-resident__name">ARNOLD</h2>
+
+                <div class="card-resident__meta">
+                  <span>Mâle</span>
+                  <span>-</span>
+                  <span>10 ans</span>
+                </div>
+
+                <ul class="card-resident__compatibility">
+                  <li class="is-ok">
+                    <span><img src="./assets/svg/cross.svg" alt="" /></span>
+                    Enfants
+                  </li>
+                  <li class="is-not-ok">
+                    <span><img src="./assets/svg/cross.svg" alt="" /></span>
+                    Chiens
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card-resident__image">
+                <img src="./assets/images/cat5.webp" alt="Photo de Jacky" />
+              </div>
+            </div>
+
+            <p class="card-resident__description">
+              Doyen du bar, Arnold aime observer le monde à distance. Sage et
+              tranquille, il préfère prendre de la hauteur pour regarder
+              passer les humains et ses congénères. Discret mais plein de
+              charme, il apprécie qu'on respecte son rythme et son espace.
+            </p>
+          </article>
+
+          <article class="card-resident card-resident--detailed">
+            <div class="card-resident__top">
+              <div class="card-resident__info">
+                <h2 class="card-resident__name">Coco</h2>
+
+                <div class="card-resident__meta">
+                  <span>Mâle</span>
+                  <span>-</span>
+                  <span>5 mois</span>
+                </div>
+
+                <ul class="card-resident__compatibility">
+                  <li class="is-ok">
+                    <span><img src="./assets/svg/cross.svg" alt="" /></span>
+                    Enfants
+                  </li>
+                  <li class="is-not-ok">
+                    <span><img src="./assets/svg/cross.svg" alt="" /></span>
+                    Chiens
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card-resident__image">
+                <img src="./assets/images/cat6.webp" alt="Photo de Jacky" />
+              </div>
+            </div>
+
+            <p class="card-resident__description">
+              Coco est un chaton affectueux et joueur. Curieux et plein de
+              vie, il adore explorer, courir après tout ce qui bouge et
+              partager des moments de tendresse. Une vraie petite boule
+              d'énergie et de douceur.
+            </p>
+          </article>
+
+          <article class="card-resident card-resident--detailed">
+            <div class="card-resident__top">
+              <div class="card-resident__info">
+                <h2 class="card-resident__name">Manon</h2>
+
+                <div class="card-resident__meta">
+                  <span>Femelle</span>
+                  <span>-</span>
+                  <span>9 mois</span>
+                </div>
+
+                <ul class="card-resident__compatibility">
+                  <li class="is-ok">
+                    <span><img src="./assets/svg/check.svg" alt="" /></span>
+                    Enfants
+                  </li>
+                  <li class="is-not-ok">
+                    <span><img src="./assets/svg/check.svg" alt="" /></span>
+                    Chiens
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card-resident__image">
+                <img src="./assets/images/cat7.webp" alt="Photo de Jacky" />
+              </div>
+            </div>
+
+            <p class="card-resident__description">
+              Manon est une jeune chatte joueuse mais timide. Curieuse et
+              pleine d'énergie, elle aime s'amuser tout en gardant une
+              certaine réserve. Avec douceur et patience, elle se laisse peu à
+              peu apprivoiser et révèle son côté espiègle.
+            </p>
+          </article>
+
+          <article class="card-resident card-resident--detailed">
+            <div class="card-resident__top">
+              <div class="card-resident__info">
+                <h2 class="card-resident__name">Spike</h2>
+
+                <div class="card-resident__meta">
+                  <span>Mâle</span>
+                  <span>-</span>
+                  <span>1 an</span>
+                </div>
+
+                <ul class="card-resident__compatibility">
+                  <li class="is-ok">
+                    <span><img src="./assets/svg/check.svg" alt="" /></span>
+                    Enfants
+                  </li>
+                  <li class="is-not-ok">
+                    <span><img src="./assets/svg/check.svg" alt="" /></span>
+                    Chiens
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card-resident__image">
+                <img src="./assets/images/cat8.webp" alt="Photo de Jacky" />
+              </div>
+            </div>
+
+            <p class="card-resident__description">
+              Très sociable et proche des humains, Spike adore le contact.
+              Avec un peu de chance et beaucoup de douceur, il viendra
+              s’installer confortablement sur vous pour une pause câlin bien
+              méritée. Vos jambes sont bien plus agréables que vous ne le
+              pensez.
+            </p>
+          </article>
+        </div>
+      </section>
+    </div>
+    <img class="nuage nuage-inverse" src="./assets/svg/nuage_residents.svg" alt="Nuage inversé" />
+  </main>
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-top-left">
+        <div>
+          <h3>Newsletter</h3>
+          <p>Pour être informer de tous nos évènements :</p>
+        </div>
+        <div class="container-form">
+          <form>
+            <input type="email" placeholder="Email" required />
+            <button type="submit">S'inscrire à la newsletter</button>
+          </form>
+        </div>
+      </div>
+      <div class="decor-flex">
+        <svg viewBox="0 0 32 31" fill="currentColor" class="decor-footer" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12.2101 0.0217685C13.6361 0.216769 21.0421 7.24877 15.0641 10.1528C7.02309 14.0588 7.29909 5.89877 8.31309 3.69877C9.32709 1.49877 10.4841 -0.214231 12.2101 0.0217685Z"
+            fill="currentColor"></path>
+          <path
+            d="M24.2571 9.48076C25.9251 9.98376 28.3141 15.5228 22.9471 16.7038C17.5801 17.8838 18.0951 12.5018 19.0401 11.1038C19.9861 9.70576 21.7041 8.71076 24.2561 9.48076H24.2571Z"
+            fill="currentColor"></path>
+          <path
+            d="M26.0269 19.5998C27.3679 18.5088 30.0269 19.1718 30.9409 20.4908C31.8549 21.8098 30.1109 24.6468 27.7279 24.2148C25.3449 23.7828 23.3209 21.8008 26.0269 19.5998Z"
+            fill="currentColor"></path>
+          <path
+            d="M1.44711 5.32776C2.61211 4.45476 4.83811 5.71177 4.58211 7.12677C4.32511 8.54177 3.21611 10.4168 1.42911 9.24676C-0.357893 8.07676 0.290106 6.19476 1.44711 5.32776Z"
+            fill="currentColor"></path>
+          <path
+            d="M12.408 13.4728C16.056 15.4178 26.782 23.5878 23.263 28.3528C19.743 33.1178 11.602 28.5278 9.93303 27.1258C8.26403 25.7248 -0.89397 20.6758 0.0710299 16.3638C1.03603 12.0518 3.55703 8.75376 12.408 13.4728Z"
+            fill="currentColor"></path>
+        </svg>
+
+        <div class="footer-top-right">
+          <div>
+            <h3>Horaires</h3>
+            <ul>
+              <li>Du mardi au samedi de <span>11h à 21h30</span></li>
+              <li>Le dimanche de <span>10h à 14h</span></li>
+              <li>Fermé le lundi</li>
+            </ul>
+          </div>
+          <div class="container-butons-schedule">
+            <a href="#" class="button button--secondary hero__cta"> Écrire </a>
+            <a href="#" class="button button--secondary hero__cta"> Appeler </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="#">Mentions légales</a>
+      <a href="#">Politique de confidentialité</a>
+      <a href="#">Plan du site</a>
+    </div>
+  </footer>
+</body>
+<script src="./scripts/main.js"></script>
+<script src="./scripts/menu.js"></script>
+
+</html>

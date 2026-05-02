@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/main.css" />
+
+  <title>A propos</title>
+</head>
+
+<body>
+  <header class="header header--sticky">
+    <div class="header__logo">
+      <a href="index.html">
+        <img src="./assets/logo/logo.svg" alt="Retour à la page d'accueil" />
+      </a>
+    </div>
+
+    <!-- bouton burger -->
+    <button class="burger" id="burger" aria-label="Ouvrir le menu">
+      <img src="./assets/svg/burger-menu.svg" alt="Menu" id="burger-icon" />
+    </button>
+
+    <nav class="header__nav" id="nav">
+      <ul>
+        <li>
+          <a href="residents.html" class="header__link header__link--active">Nos résidents</a>
+        </li>
+        <li>
+          <a href="pages/exemple-page.html" class="header__link">Menu</a>
+        </li>
+        <li>
+          <a href="pages/exemple-page.html" class="header__link">Règlement</a>
+        </li>
+        <li>
+          <a href="a_propos.html" class="header__link">À propos</a>
+        </li>
+        <li>
+          <a href="pages/exemple-page.html" class="button button--primary">Réserver</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="overlay" id="overlay"></div>
+  <main class="main">
+    <section class="section_main">
+      <h1>À propos de nous</h1>
+
+      <div class="timeline-grid">
+        <!-- Ligne 1 -->
+        <div class="cellule"></div>
+        <div class="cellule trait_gauche padding-bottom">
+          <h4>2020 - Ouverture de Chat'alors</h4>
+          <p class="body">
+            Après des mois de préparation, de travaux et de collaborations
+            avec la SPA, Chat'alors ouvre enfin ses portes et accueille ses
+            premiers visiteurs… et ses premiers chats résidents.
+          </p>
+        </div>
+        <div class="cellule"></div>
+
+        <div class="image-cellule">
+          <img src="./assets/svg/timeline_line.svg" alt="Timeline trait mobile" />
+        </div>
+
+        <!-- Ligne 3 -->
+        <div class="cellule trait_gauche padding-top" style="grid-column: 1">
+          <!-- C4 -->
+          <h4>2019 - Naissance du projet</h4>
+          <p class="body">
+            L'idée du bar à chats naît d'une passion commune pour les animaux
+            et les lieux de partage : créer un espace chaleureux où humains et
+            chats peuvent se rencontrer dans le respect et la douceur.
+          </p>
+        </div>
+        <div class="cellule trait_gauche padding-top">
+          <h4>2024 - Une communauté engagée</h4>
+          <p class="body">
+            Chat'alors devient un lieu de vie incontournable, soutient
+            l'adoption responsable et accueille régulièrement des événements
+            solidaires, renforçant les liens entre amoureux des chats.
+          </p>
+        </div>
+        <div class="cellule"></div>
+      </div>
+      <svg viewBox="0 0 90 85" fill="none" class="decor_diagramme_mid" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M4.7539 26.9162C20.8557 16.4155 51.002 0.964112 42.7728 23.1644C32.4864 50.9148 18.3544 60.5356 39.9455 57.0339C61.5366 53.5322 83.9316 58.1775 73.5291 70.8578"
+          stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+      </svg>
+      <svg viewBox="0 0 81 82" fill="none" class="decor_diagramme_top" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M76.2303 54.4864C54.58 52.1598 48.0158 46.0228 42.2069 32.5556C36.3981 19.0885 41.6889 -0.241872 18.1499 15.7569C-0.681326 28.5559 7.73941 44.0297 14.3037 50.1667"
+          stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+        <path
+          d="M76.9727 26.8651C77.2654 22.1368 75.2164 17.9995 69.655 17.9995C65.8497 17.9995 62.0445 22.4323 63.2154 27.7517C64.3862 33.071 66.7279 34.2531 71.9966 33.9576C77.2654 33.6621 76.68 31.5934 76.9727 26.8651Z"
+          fill="#A6C7E7" />
+      </svg>
+
+      <svg viewBox="0 0 179 211" fill="none" class="decor_diagramme_bottom" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M140.23 180.285C144.592 177.203 144.781 170.532 132.407 156.722C119.865 142.998 79.9312 98.9772 78.4807 97.3871C77.0302 95.7971 72.5026 90.269 73.6308 84.6017C74.759 78.9344 78.276 75.8611 65.4635 60.3666C52.6511 44.8722 37.3902 38.2659 29.0536 40.626C20.7171 42.9861 7.21697 43.9609 10.2745 63.6021C13.332 83.2432 21.345 100.135 36.9421 106.569C52.5391 113.003 52.7508 99.7466 67.1978 118.433C81.6449 137.12 107.25 165.999 111.695 171.781C116.055 177.395 126.052 189.877 140.144 180.117L140.23 180.285Z"
+          fill="currentColor" />
+        <path
+          d="M156.623 186.884C159.457 185.164 168.977 175.122 161.68 147.876C154.383 120.63 141.272 86.8724 140.673 83.1905C140.075 79.5086 131.189 61.5251 135.492 60.9489C139.795 60.3727 144.577 52.1761 141.693 44.3036C138.809 36.431 125.241 2.41175 118.081 3.17666C111.15 4.07239 129.097 45.756 124.551 48.3184C120.004 50.8808 108.025 7.59897 101.359 8.03933C94.694 8.47969 113.8 48.7004 109.408 52.566C105.017 56.4316 94.3147 13.5761 86.5868 15.8379C78.8109 17.9205 95.6218 62.598 96.5595 64.6521C97.4973 66.7062 102.325 70.9843 110.729 68.3495C113.345 67.2645 137.891 156.745 139.741 162.205C141.591 167.665 145.998 192.803 156.623 186.884Z"
+          fill="currentColor" />
+      </svg>
+    </section>
+
+    <img class="nuage" src="./assets/svg/nuage.svg" alt="" />
+    <div class="fond">
+      <section class="section_main">
+        <h2>LE CONCEPT</h2>
+        <p class="body">
+          Chat'alors est un <strong>bar à chats</strong> cosy et convivial.
+          Ici, on vient savourer une boisson, une douceur sucrée et surtout
+          partager un moment de calme en compagnie de chats. <br />
+          <br />
+
+          Chat'alors a été imaginé dans le
+          <strong>respect du bien-être animal.</strong> Les chats sont libres
+          de leurs mouvements, disposent d'espaces de repos dédiés et
+          interagissent avec les visiteurs uniquement s'ils le souhaitent.
+          Tous sont <strong>suivis par des professionnels</strong> et
+          accueillis en partenariat avec la SPA, dans une démarche d'adoption
+          responsable et engagée. <br /><br />
+
+          Lieu de rencontres et de partage, Chat'alors s'adresse aussi bien
+          <strong>aux habitués qu'aux curieux, aux familles comme aux amis.</strong>
+          Que vous veniez pour vous détendre, travailler tranquillement ou
+          simplement profiter de la présence apaisante des chats, Chat'alors
+          vous ouvre ses portes.
+        </p>
+      </section>
+    </div>
+
+    <div class="nuage-container">
+
+      <img class="nuage nuage-inverse" src="./assets/svg/nuage.svg" alt="Nuage inversé" />
+      <svg class="deco-svg-breadcrumbs" viewBox="0 0 1056 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M578.032 175.154C591.372 175.154 593.151 186.737 599.376 175.154C606.491 163.57 599.376 171.59 606.491 163.57C616.273 155.551 625.167 153.769 614.495 140.404L604.712 127.039C584.258 115.456 572.696 127.039 562.914 132.385C551.353 139.513 544.238 145.75 553.131 157.333C562.025 168.917 564.693 174.263 578.032 176.045L578.032 175.154Z"
+          fill="currentColor" />
+        <path
+          d="M409.95 188.519C419.733 188.519 409.95 184.955 419.733 188.519C429.515 192.083 433.072 196.538 438.408 188.519L443.744 176.936C443.744 158.225 433.962 155.551 425.069 150.205C417.065 144.859 409.95 142.186 404.614 150.205C399.278 158.225 397.499 163.571 401.057 173.372C404.614 183.173 397.499 188.519 409.061 188.519L409.95 188.519Z"
+          fill="currentColor" />
+        <path
+          d="M586.036 53.0843C599.376 53.0843 601.155 64.6675 607.38 53.0843C614.495 41.5011 607.38 49.5202 614.495 41.5011C624.277 33.4819 633.171 31.6999 622.499 18.3347L612.716 4.96942C592.262 -6.6138 580.7 4.96942 570.918 10.3155C561.135 15.6616 552.242 23.6808 561.135 35.264C570.029 46.8472 572.697 50.4113 586.036 53.9753L586.036 53.0843Z"
+          fill="currentColor" />
+        <path
+          d="M1014.69 175.154C1028.03 175.154 1029.81 186.737 1036.03 175.154C1043.15 163.57 1034.26 171.59 1043.15 163.57C1052.93 155.551 1061.83 153.769 1051.15 140.404L1043.15 127.039C1022.69 115.456 1011.13 127.039 1001.35 132.385C989.79 139.513 982.675 145.75 991.568 157.333C1000.46 168.917 1001.35 174.263 1014.69 176.045L1014.69 175.154Z"
+          fill="currentColor" />
+        <path
+          d="M836.826 234.852C850.166 234.852 851.944 246.435 858.17 234.852C864.395 223.269 856.391 231.288 865.284 223.269C875.067 215.25 883.96 213.468 873.288 200.102L863.506 186.737C843.051 175.154 831.49 186.737 821.707 192.083C810.146 199.211 803.032 205.448 811.925 217.032C821.707 230.397 823.486 233.961 836.826 235.743L836.826 234.852Z"
+          fill="currentColor" />
+        <path
+          d="M730.107 137.731C745.225 134.167 745.225 144.859 751.451 132.385L758.565 120.802C760.344 90.5074 753.229 86.9433 741.668 86.9433C730.107 86.9433 722.992 86.9433 720.324 96.7445C716.767 103.873 720.324 117.238 720.324 117.238C720.324 117.238 714.988 140.404 730.107 137.731Z"
+          fill="currentColor" />
+        <path
+          d="M105.801 30.809C130.702 40.6101 142.263 38.8281 142.263 38.8281C142.263 38.8281 147.599 50.4113 153.824 52.1934C160.939 52.1934 172.5 48.6293 172.5 48.6293C185.84 45.0652 189.397 37.0461 185.84 28.1359C182.283 19.2257 185.84 16.5527 176.058 14.7707C166.275 12.9886 166.275 -6.61375 139.595 9.42455C112.916 25.4629 80.8998 19.2257 105.801 29.9179L105.801 30.809Z"
+          fill="currentColor" />
+        <path
+          d="M356.59 109.219C366.373 102.09 369.93 97.6353 369.93 88.7252C369.93 79.815 360.148 71.7958 360.148 71.7958C360.148 71.7958 350.365 48.6294 339.693 60.2126C329.911 71.7958 324.575 63.7767 324.575 77.1419L324.575 90.5072C337.915 115.456 345.918 115.456 356.59 109.219Z"
+          fill="currentColor" />
+        <path
+          d="M169.833 152.878C186.73 168.025 203.627 145.75 209.852 152.878C209.852 152.878 213.41 168.025 231.196 166.243C248.983 164.461 254.318 147.532 263.212 126.148C272.105 104.763 259.654 105.654 255.208 101.199C248.093 95.8531 249.872 91.398 240.089 87.834C198.291 87.834 192.066 87.834 183.172 104.763C174.279 121.693 151.157 139.513 169.833 154.66L169.833 152.878Z"
+          fill="currentColor" />
+        <path
+          d="M6.1967 179.609C13.3113 189.41 23.0939 191.192 39.991 191.192C56.8882 191.192 51.5523 184.064 53.3309 179.609C53.3309 174.263 58.6669 174.263 58.6669 166.243C50.6629 139.513 47.1056 135.949 35.5444 132.385C23.9832 132.385 5.30737 122.584 0.86075 135.949C-3.58587 149.314 10.6433 157.333 10.6433 164.461C10.6433 164.461 0.860752 169.807 7.08602 179.609L6.1967 179.609Z"
+          fill="currentColor" />
+      </svg>
+
+
+    </div>
+
+    </div>
+    <section class="section_main">
+
+      <svg viewBox="0 0 260 213" class="decor-apropos-left-top" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M206.23 53.2608C147.683 11.8105 79.9767 24.3583 58.7296 25.0785C24.3826 26.4042 27.2261 47.9529 30.6526 54.3064C34.0267 60.8658 57.0036 158.348 69.2773 169.588C81.551 180.828 140.294 189.668 156.629 191.86C172.965 194.052 224.431 123.003 237.949 109.571C251.466 96.1398 265.035 94.5577 206.488 53.1075L206.23 53.2608ZM187.243 90.7247C179.002 88.6236 71.6757 70.6843 68.3172 60.6217C64.7527 50.5066 67.8177 45.3698 83.1351 44.6721C90.923 44.2466 166.312 31.6849 203.215 70.2471C240.324 108.862 195.278 92.7733 187.243 90.7247Z"
+          fill="currentColor" />
+      </svg>
+
+      <svg viewBox="0 0 81 112" class="decor-apropos-left-bottom" xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor">
+        <path
+          d="M75.8561 98.5299C68.9561 90.3299 63.5561 81.0299 60.1561 70.9299C58.4561 66.0299 57.1561 60.5299 56.1561 55.2299C55.0561 49.8299 54.3561 44.4299 53.8561 39.0299C53.6561 36.3299 53.4561 33.6299 53.4561 30.8299C53.4561 29.4299 53.4561 28.1299 53.4561 26.7299C53.4561 25.1299 53.3561 23.3299 53.0561 21.7299C51.8561 15.0299 47.8561 8.8299 42.1561 4.82991C36.4561 0.829905 29.0561 -0.870096 21.8561 0.429904C14.5561 1.7299 7.95606 6.1299 3.55606 12.3299C1.45606 15.1299 -0.343936 19.3299 0.0560643 22.8299C0.156064 23.7299 0.456065 24.5299 0.756065 25.2299C1.15607 25.9299 1.65607 26.5299 2.35607 27.0299C3.65607 28.0299 5.45606 28.3299 7.95606 28.3299C9.95606 28.3299 11.4561 27.7299 12.5561 27.2299C13.6561 26.6299 14.3561 26.0299 14.8561 25.2299C15.8561 23.8299 16.2561 22.0299 17.0561 20.6299C18.7561 17.5299 21.5561 15.2299 24.6561 14.2299C26.1561 13.7299 27.9561 13.5299 29.6561 13.7299C31.3561 13.8299 33.0561 14.3299 34.5561 15.1299C37.6561 16.7299 40.1561 19.6299 41.2561 23.0299C41.8561 24.8299 41.8561 26.0299 41.9561 29.3299C42.0561 32.2299 42.2561 35.0299 42.4561 37.9299C42.9561 43.9299 43.6561 49.8299 44.7561 55.7299C45.3561 58.6299 45.9561 61.6299 46.5561 64.5299C47.2561 67.4299 48.0561 70.3299 48.9561 73.3299C52.7561 85.2299 59.1561 96.2299 67.3561 105.53C69.9561 108.63 73.1561 114.23 78.2561 109.03C83.7561 103.33 78.2561 101.23 76.0561 98.5299H75.8561Z"
+          fill="currentColor"></path>
+      </svg>
+
+      <svg class="decor-apropos-left-bottom-2" viewBox="0 0 41 39" fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M32.4302 4.81645C35.5192 3.06845 41.0662 6.23645 37.7542 11.2055C34.4412 16.1745 26.1602 8.36645 32.4302 4.81645Z"
+          fill="currentColor"></path>
+        <path
+          d="M20.9552 0.284423C23.8642 -0.940577 29.4732 1.82242 26.1602 7.97442C22.8472 14.1264 18.1152 10.8134 18.1152 6.08142C18.1152 1.34942 18.7072 1.23042 20.9542 0.284423H20.9552Z"
+          fill="currentColor"></path>
+        <path
+          d="M6.25733 5.00445C8.21433 3.45545 14.8933 4.53145 15.1303 9.26345C15.3673 13.9954 12.1723 18.9645 8.15033 16.5985C4.12833 14.2325 3.41833 7.25245 6.25733 5.00445Z"
+          fill="currentColor"></path>
+        <path
+          d="M0.496112 18.8014C1.51911 17.1524 6.76611 17.3814 5.22811 21.4044C3.69011 25.4264 -1.63389 22.2324 0.496112 18.8014Z"
+          fill="currentColor"></path>
+        <path
+          d="M18.115 18.0804C23.858 15.9474 35.082 16.8964 37.342 18.9414C39.603 20.9864 45.219 32.2204 30.147 34.3344C23.241 35.3034 21.411 41.2234 12.799 36.7024C4.18696 32.1814 11.159 20.6634 18.115 18.0804Z"
+          fill="currentColor"></path>
+      </svg>
+
+      <svg viewBox="0 0 96 94" fill="currentColor" class="decor-apropos-right-bottom"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M1.6 14.6006C1.6 18.8006 5.7 24.0006 9.1 26.5006C2.1 31.3006 -4.7 41.0006 7.6 47.8006C3.4 51.7006 -1.1 62.9006 6.1 68.3006C2.7 70.6006 0 78.6006 0 82.8006C0 90.1006 7.9 93.1006 15.2 93.1006C22.5 93.1006 22.6 87.6006 25.1 84.2006C29 96.2006 41.1 95.2006 46.5 87.8006C51.3 94.8006 65 93.6006 67.8 84.5006C70.1 87.9006 76 92.9006 80.1 92.9006C87.4 92.9006 93 87.4006 93 80.1006C93 72.8006 88.3 71.0006 84.9 68.5006C91.9 63.7006 93.3 53.8006 86.1 46.2006C90.6 44.1006 103.1 25.2006 83.5 25.2006C86.9 22.9006 95.4 21.5006 95.4 17.4006C95.4 10.1006 87.2 0.100601 79.9 0.100601C72.6 0.100601 70.1 3.3006 67.6 6.7006C65.9 -1.7994 51.1 -0.299399 46.4 6.7006C41.6 -0.299399 30.6 0.800601 25.2 6.7006C24.1 -0.199399 16.1 0.000600482 11.9 0.000600482C4.6 0.000600482 1.5 7.3006 1.5 14.6006H1.6ZM60 60.3006C60 58.8006 60.9 56.8006 62.4 56.8006C63.9 56.8006 66.3 58.4006 66.3 59.9006V61.5006C66.3 63.0006 65.1 65.3006 63.6 65.3006C62.1 65.3006 60.1 62.5006 60.1 61.0006V60.4006L60 60.3006ZM58.6 28.6006C58.6 26.2006 59.8 25.8006 61.3 25.8006C62.8 25.8006 65 26.2006 65 27.7006L65.2 29.3006C65.2 30.8006 65.1 33.1006 63.6 33.1006C62.1 33.1006 59.6 32.9006 58.6 29.3006V28.6006ZM43.4 46.2006C43.4 44.7006 45.7 42.4006 47.1 42.4006C48.5 42.4006 49.9 46.2006 49.9 47.7006V49.2006C49.9 50.7006 48.1 51.4006 46.6 51.4006C45.1 51.4006 43.4 48.5006 43.4 47.0006V46.3006V46.2006ZM27.1 59.7006C27.1 58.2006 28.9 57.3006 30.3 57.3006C31.7 57.3006 33.7 59.5006 33.7 61.0006V62.3006C33.7 63.8006 31.8 66.4006 30.3 66.4006C28.8 66.4006 27.1 63.8006 27.1 62.4006V59.7006ZM27.7 28.0006C27.7 26.5006 29.7 24.4006 31.2 24.4006C32.7 24.4006 34.1 26.9006 34.1 28.4006V29.5006C34.1 31.0006 32.1 32.9006 30.6 32.9006C29.1 32.9006 27.7 30.3006 27.7 28.8006V28.0006Z"
+          fill="currentColor"></path>
+      </svg>
+
+      <svg fill="currentColor" class="decor-apropos-right-top" viewBox="0 0 54 115" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M25.1062 112.616C39.9062 111.816 50.9062 119.816 48.7062 105.516C46.5062 91.316 44.9062 52.516 48.7062 45.616C52.5062 38.716 57.5062 24.416 49.9062 19.516C48.1062 18.716 49.9062 11.916 43.4062 6.91604C36.9062 1.91604 35.2062 4.81604 32.2062 4.81604C29.8062 4.51604 26.3062 -2.58396 19.5062 1.01604C12.7062 4.51604 15.1062 11.316 12.7062 12.216C10.3062 13.116 -0.293757 13.516 0.00624336 24.216C0.306243 34.916 5.90624 47.616 3.50624 60.116C1.10624 72.616 3.80624 100.616 2.90624 103.516C2.00624 106.416 4.40624 113.816 25.0062 112.616H25.1062Z"
+          fill="currentColor" />
+        <path
+          d="M5.50605 18.016C7.20605 16.916 13.206 12.116 13.406 19.016C13.606 25.916 7.70605 30.716 6.40605 28.216C5.10605 25.716 -0.493954 22.116 5.50605 18.116V18.016Z"
+          fill="#FDF0E8" />
+        <path
+          d="M26.8062 13.316C24.4062 13.616 15.9062 15.216 17.4062 9.71604C18.9062 4.21604 27.1062 2.51604 28.1062 4.91604C29.1062 7.41604 35.1062 12.316 26.8062 13.316Z"
+          fill="#FDF0E8" />
+        <path
+          d="M40.9064 9.51605C43.2064 10.5161 49.0064 15.1161 45.9064 18.3161C42.8064 21.5161 36.8064 19.9161 37.6064 15.3161C38.4064 10.7161 38.0064 8.21605 41.0064 9.51605H40.9064Z"
+          fill="#FDF0E8" />
+        <path
+          d="M49.7061 25.016C51.7061 25.316 53.3061 31.616 49.7061 33.916C46.1061 36.216 42.4061 23.916 49.7061 25.016Z"
+          fill="#FDF0E8" />
+      </svg>
+
+
+      <h2>NOTRE ÉQUIPE</h2>
+      <div class="team_normal">
+        <div class="container_card">
+          <article class="card-resident card-resident--staff">
+            <div class="card-resident__top">
+              <div class="card-resident__info">
+                <h2 class="card-resident__name">ALEXANDRE</h2>
+                <p class="card-resident__role">Gérant de Chat'alors</p>
+              </div>
+
+              <div class="card-resident__image">
+                <img src="./assets/images/employee1.webp" alt="Alexandre" />
+              </div>
+            </div>
+
+            <p class="card-resident__description">
+              Alexandre est à l'origine de l'esprit de Chat'alors. Passionnée
+              par les chats et l'accueil client, il veille au bon
+              fonctionnement du bar, au bien-être des félins et à la qualité
+              de l'expérience offerte à chaque visiteur.
+            </p>
+          </article>
+          <article class="card-resident card-resident--staff">
+            <div class="card-resident__top">
+              <div class="card-resident__info">
+                <h2 class="card-resident__name">CLARA</h2>
+                <p class="card-resident__role">
+                  Référente bien-être animal et adoption
+                </p>
+              </div>
+
+              <div class="card-resident__image">
+                <img src="./assets/images/employee4.webp" alt="Clara" />
+              </div>
+            </div>
+
+            <p class="card-resident__description">
+              Clara s'assure que les chats se sentent en sécurité et respectés
+              au quotidien. Elle surveille leur comportement, informe les
+              visiteurs des bonnes pratiques et fait le lien avec les
+              vétérinaires et la SPA.
+            </p>
+          </article>
+
+          <article class="card-resident card-resident--staff">
+            <div class="card-resident__top">
+              <div class="card-resident__info">
+                <h2 class="card-resident__name">MARION</h2>
+                <p class="card-resident__role">
+                  Chargée d'accueil et de communication
+                </p>
+              </div>
+
+              <div class="card-resident__image">
+                <img src="./assets/images/employee5.webp" alt="Clara" />
+              </div>
+            </div>
+
+            <p class="card-resident__description">
+              Marion est le premier sourire que vous croisez en entrant chez
+              Chat'alors. Elle accueille les clients, gère les réservations et
+              anime les réseaux sociaux pour partager la vie du bar et de ses
+              chats.
+            </p>
+          </article>
+
+          <article class="card-resident card-resident--staff">
+            <div class="card-resident__top">
+              <div class="card-resident__info">
+                <h2 class="card-resident__name">KÉVIN</h2>
+                <p class="card-resident__role">Responsable barista</p>
+              </div>
+
+              <div class="card-resident__image">
+                <img src="./assets/images/employee2.webp" alt="Kévin" />
+              </div>
+            </div>
+
+            <p class="card-resident__description">
+              Kévin est le pro des boissons chez Chat'alors. Café, thé ou
+              boisson gourmande, il met un point d'honneur à préparer chaque
+              commande avec soin, tout en gardant un œil attentif sur les
+              chats et les clients.
+            </p>
+          </article>
+
+          <article class="card-resident card-resident--staff">
+            <div class="card-resident__top">
+              <div class="card-resident__info">
+                <h2 class="card-resident__name">CLÉMENCE</h2>
+                <p class="card-resident__role">Pâtissière</p>
+              </div>
+
+              <div class="card-resident__image">
+                <img src="./assets/images/employee6.webp" alt="Clémence" />
+              </div>
+            </div>
+
+            <p class="card-resident__description">
+              Clémence prépare chaque jour des douceurs maison pour
+              accompagner les moments de détente. Créative et rigoureuse, elle
+              propose des recettes gourmandes.
+            </p>
+          </article>
+
+          <article class="card-resident card-resident--staff">
+            <div class="card-resident__top">
+              <div class="card-resident__info">
+                <h2 class="card-resident__name">JULIEN</h2>
+                <p class="card-resident__role">Agent polyvalent</p>
+              </div>
+
+              <div class="card-resident__image">
+                <img src="./assets/images/employee3.webp" alt="Clémence" />
+              </div>
+            </div>
+
+            <p class="card-resident__description">
+              Julien veille à la propreté et au bon aménagement des espaces,
+              essentiels au confort des chats et des visiteurs. Toujours
+              discret et efficace, il contribue chaque jour à maintenir un
+              environnement sain et apaisant.
+            </p>
+          </article>
+        </div>
+      </div>
+
+      <div class="team_carrousel">
+        <section class="carrousel_container">
+          <div class="carrousel_deux">
+            <div class="tapa_deux" id="move">
+              <div class="item_deux">
+                <article class="card-resident card-resident--staff">
+                  <div class="card-resident__top">
+                    <div class="card-resident__info">
+                      <h2 class="card-resident__name">ALEXANDRE</h2>
+                      <p class="card-resident__role">Gérant de Chat'alors</p>
+                    </div>
+
+                    <div class="card-resident__image">
+                      <img src="./assets/images/employee1.webp" alt="Alexandre" />
+                    </div>
+                  </div>
+
+                  <p class="card-resident__description">
+                    Alexandre est à l'origine de l'esprit de Chat'alors. Passionnée
+                    par les chats et l'accueil client, il veille au bon
+                    fonctionnement du bar, au bien-être des félins et à la qualité
+                    de l'expérience offerte à chaque visiteur.
+                  </p>
+                </article>
+              </div>
+
+              <div class="item_deux">
+                <article class="card-resident card-resident--staff">
+                  <div class="card-resident__top">
+                    <div class="card-resident__info">
+                      <h2 class="card-resident__name">CLARA</h2>
+                      <p class="card-resident__role">
+                        Référente bien-être animal et adoption
+                      </p>
+                    </div>
+
+                    <div class="card-resident__image">
+                      <img src="./assets/images/employee4.webp" alt="Clara" />
+                    </div>
+                  </div>
+
+                  <p class="card-resident__description">
+                    Clara s'assure que les chats se sentent en sécurité et respectés
+                    au quotidien. Elle surveille leur comportement, informe les
+                    visiteurs des bonnes pratiques et fait le lien avec les
+                    vétérinaires et la SPA.
+                  </p>
+                </article>
+              </div>
+
+              <div class="item_deux">
+                <article class="card-resident card-resident--staff">
+                  <div class="card-resident__top">
+                    <div class="card-resident__info">
+                      <h2 class="card-resident__name">MARION</h2>
+                      <p class="card-resident__role">
+                        Chargée d'accueil et de communication
+                      </p>
+                    </div>
+
+                    <div class="card-resident__image">
+                      <img src="./assets/images/employee5.webp" alt="Clara" />
+                    </div>
+                  </div>
+
+                  <p class="card-resident__description">
+                    Marion est le premier sourire que vous croisez en entrant chez
+                    Chat'alors. Elle accueille les clients, gère les réservations et
+                    anime les réseaux sociaux pour partager la vie du bar et de ses
+                    chats.
+                  </p>
+                </article>
+              </div>
+
+              <div class="item_deux">
+                <article class="card-resident card-resident--staff">
+                  <div class="card-resident__top">
+                    <div class="card-resident__info">
+                      <h2 class="card-resident__name">KÉVIN</h2>
+                      <p class="card-resident__role">Responsable barista</p>
+                    </div>
+
+                    <div class="card-resident__image">
+                      <img src="./assets/images/employee2.webp" alt="Kévin" />
+                    </div>
+                  </div>
+
+                  <p class="card-resident__description">
+                    Kévin est le pro des boissons chez Chat'alors. Café, thé ou
+                    boisson gourmande, il met un point d'honneur à préparer chaque
+                    commande avec soin, tout en gardant un œil attentif sur les
+                    chats et les clients.
+                  </p>
+                </article>
+              </div>
+
+              <div class="item_deux">
+                <article class="card-resident card-resident--staff">
+                  <div class="card-resident__top">
+                    <div class="card-resident__info">
+                      <h2 class="card-resident__name">CLÉMENCE</h2>
+                      <p class="card-resident__role">Pâtissière</p>
+                    </div>
+
+                    <div class="card-resident__image">
+                      <img src="./assets/images/employee6.webp" alt="Clémence" />
+                    </div>
+                  </div>
+
+                  <p class="card-resident__description">
+                    Clémence prépare chaque jour des douceurs maison pour
+                    accompagner les moments de détente. Créative et rigoureuse, elle
+                    propose des recettes gourmandes.
+                  </p>
+                </article>
+              </div>
+
+              <!-- <div class="item_deux">
+                <article class="card-resident card-resident--staff">
+                  <div class="card-resident__top">
+                    <div class="card-resident__info">
+                      <h2 class="card-resident__name">JULIEN</h2>
+                      <p class="card-resident__role">Agent polyvalent</p>
+                    </div>
+
+                    <div class="card-resident__image">
+                      <img src="./assets/images/employee3.webp" alt="Clémence" />
+                    </div>
+                  </div>
+
+                  <p class="card-resident__description">
+                    Julien veille à la propreté et au bon aménagement des espaces,
+                    essentiels au confort des chats et des visiteurs. Toujours
+                    discret et efficace, il contribue chaque jour à maintenir un
+                    environnement sain et apaisant.
+                  </p>
+                </article>
+              </div> -->
+            </div>
+            <div class="cont_deux_propos">
+              <div class="left_deux controls_deux" id="l">
+                <svg class="arrow" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.6374 19.9708C10.8563 20.7522 10.4175 21.8118 10.4175 22.9167C10.4175 24.0215 10.8563 25.0811 11.6374 25.8625L24.9999 39.2271L38.3624 25.8625C39.177 25.05 39.5833 23.9833 39.5833 22.9167C39.5833 21.85 39.177 20.7833 38.3624 19.9708C37.5811 19.1897 36.5214 18.7509 35.4166 18.7509C34.3117 18.7509 33.2521 19.1897 32.4708 19.9708L24.9999 27.4396L17.5291 19.9708C16.7477 19.1897 15.6881 18.7509 14.5833 18.7509C13.4784 18.7509 12.4188 19.1897 11.6374 19.9708Z" />
+                </svg>
+              </div>
+
+              <div class="right_deux controls_deux" id="r">
+                <svg class="arrow" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.6374 19.9708C10.8563 20.7522 10.4175 21.8118 10.4175 22.9167C10.4175 24.0215 10.8563 25.0811 11.6374 25.8625L24.9999 39.2271L38.3624 25.8625C39.177 25.05 39.5833 23.9833 39.5833 22.9167C39.5833 21.85 39.177 20.7833 38.3624 19.9708C37.5811 19.1897 36.5214 18.7509 35.4166 18.7509C34.3117 18.7509 33.2521 19.1897 32.4708 19.9708L24.9999 27.4396L17.5291 19.9708C16.7477 19.1897 15.6881 18.7509 14.5833 18.7509C13.4784 18.7509 12.4188 19.1897 11.6374 19.9708Z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+        <script src="../scripts/main.js"></script>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-top-left">
+        <div>
+          <h3>Newsletter</h3>
+          <p>Pour être informer de tous nos évènements :</p>
+        </div>
+        <div class="container-form">
+          <form>
+            <input type="email" placeholder="Email" required />
+            <button type="submit">S'inscrire à la newsletter</button>
+          </form>
+        </div>
+      </div>
+      <div class="decor-flex">
+        <svg viewBox="0 0 32 31" fill="currentColor" class="decor-footer" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12.2101 0.0217685C13.6361 0.216769 21.0421 7.24877 15.0641 10.1528C7.02309 14.0588 7.29909 5.89877 8.31309 3.69877C9.32709 1.49877 10.4841 -0.214231 12.2101 0.0217685Z"
+            fill="currentColor"></path>
+          <path
+            d="M24.2571 9.48076C25.9251 9.98376 28.3141 15.5228 22.9471 16.7038C17.5801 17.8838 18.0951 12.5018 19.0401 11.1038C19.9861 9.70576 21.7041 8.71076 24.2561 9.48076H24.2571Z"
+            fill="currentColor"></path>
+          <path
+            d="M26.0269 19.5998C27.3679 18.5088 30.0269 19.1718 30.9409 20.4908C31.8549 21.8098 30.1109 24.6468 27.7279 24.2148C25.3449 23.7828 23.3209 21.8008 26.0269 19.5998Z"
+            fill="currentColor"></path>
+          <path
+            d="M1.44711 5.32776C2.61211 4.45476 4.83811 5.71177 4.58211 7.12677C4.32511 8.54177 3.21611 10.4168 1.42911 9.24676C-0.357893 8.07676 0.290106 6.19476 1.44711 5.32776Z"
+            fill="currentColor"></path>
+          <path
+            d="M12.408 13.4728C16.056 15.4178 26.782 23.5878 23.263 28.3528C19.743 33.1178 11.602 28.5278 9.93303 27.1258C8.26403 25.7248 -0.89397 20.6758 0.0710299 16.3638C1.03603 12.0518 3.55703 8.75376 12.408 13.4728Z"
+            fill="currentColor"></path>
+        </svg>
+
+        <div class="footer-top-right">
+          <div>
+            <h3>Horaires</h3>
+            <ul>
+              <li>Du mardi au samedi de <span>11h à 21h30</span></li>
+              <li>Le dimanche de <span>10h à 14h</span></li>
+              <li>Fermé le lundi</li>
+            </ul>
+          </div>
+          <div class="container-butons-schedule">
+            <a href="#" class="button button--secondary hero__cta">
+              Écrire
+            </a>
+            <a href="#" class="button button--secondary hero__cta">
+              Appeler
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="#">Mentions légales</a>
+      <a href="#">Politique de confidentialité</a>
+      <a href="#">Plan du site</a>
+    </div>
+  </footer>
+</body>
+<script src="./scripts/main.js"></script>
+<script src="./scripts/menu.js"></script>
+
+</html>

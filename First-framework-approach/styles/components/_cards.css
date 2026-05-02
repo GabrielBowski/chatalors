@@ -1,0 +1,325 @@
+/* Composant BEM : .card */
+
+.cards-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .cards-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.card {
+  background-color: #fff;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  padding: var(--space-lg);
+}
+
+.card__image {
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-md);
+}
+
+.card__title {
+  margin-bottom: var(--space-sm);
+  font-size: 1.1rem;
+}
+
+.card__text {
+  margin-bottom: var(--space-sm);
+  color: var(--color-text-muted);
+}
+
+.card__link {
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+/* Ajout de ma part */
+
+/* Bloc */
+.card-resident {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-xl);
+  background-color: var(--color-background);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 0.25rem 0 var(--color-accent2);
+  overflow: hidden;
+  gap: var(--padding-card);
+  z-index: 2;
+}
+
+/* Partie texte */
+
+.card-resident__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  flex: 1 1 60%; /* s’adapte à l’espace restant */
+  min-width: 150px; /* évite que le texte devienne trop petit */
+}
+
+.card-resident__name {
+  font-family: "Winky Rough", cursive;
+  font-size: 2.5rem; /* 40px */
+  font-weight: 400;
+  color: var(--color-accent1);
+  margin: 0;
+  text-align: left !important;
+}
+
+.card-resident__meta {
+  display: flex;
+  gap: var(--space-xs);
+  font-weight: 600;
+  font-size: 1.125rem; /* 18px */
+  color: var(--color-text-dark);
+}
+
+.card-resident__description {
+  font-size: 1.125rem;
+  color: var(--color-text-dark);
+  margin: 0;
+}
+
+/* Avatar */
+.card-resident__avatar {
+  width: 9.625rem;
+  height: 9.625rem;
+  min-width: 5rem;
+  min-height: 5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.card-resident__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Variante détaillée (card page nos résidents) */
+.card-resident--detailed {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding: var(--space-xl);
+  background: var(--color-background);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 0.25rem 0 #355169;
+  z-index: 3;
+}
+
+/* Top section */
+.card-resident__top {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.card-resident__info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.card-resident__name {
+  font-family: "Winky Rough", cursive;
+  font-size: 2.5rem;
+  color: var(--color-accent1);
+  margin: 0;
+  padding-bottom: var(--space-xxs) !important;
+}
+
+.card-resident__name {
+  font-family: "Winky Rough", cursive;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  color: var(--color-accent1);
+  margin: 0;
+  line-height: 1.2;
+  word-break: break-word; /* coupe les mots longs si besoin */
+}
+
+.card-resident__meta {
+  display: flex;
+  gap: var(--space-xs);
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+/* Compatibilité */
+.card-resident__compatibility {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.card-resident__compatibility li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+/* Icônes check / cross */
+.icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.is-ok .icon {
+  background-color: var(--color-accent2); /* check */
+}
+
+.is-not-ok .icon {
+  background-color: var(--color-accent1); /* cross */
+}
+
+/* Image */
+.card-resident__image {
+  width: 40%;
+  max-width: 13.5rem;
+  height: auto;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.card-resident__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Description */
+.card-resident__description {
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+/* card staff */
+
+/* Variante staff */
+.card-resident--staff {
+  background-color: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-resident__role {
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* card agenda */
+
+.card-agenda {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  width: 100%;
+  max-width: 19rem; /* ≈ 304px */
+}
+
+.card-agenda__media {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.card-agenda__media img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+.card-agenda__date {
+  position: absolute;
+  top: var(--space-sm);
+  left: var(--space-sm);
+  background: var(--color-accent2);
+  color: var(--color-text-clear);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-lg);
+  font-weight: 600;
+}
+
+.card-agenda__title {
+  font-family: "Winky Rough", cursive;
+  color: var(--color-accent1);
+  margin: 0;
+}
+
+.card-agenda__text {
+  font-size: 1.125rem;
+  margin: 0;
+  color: var(--color-text-dark);
+}
+
+.card-agenda__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+/* Styles pour tablette */
+@media (max-width: 1024px) {
+  .card-resident__image {
+    width: 7.8125rem;
+    height: 7.8125rem;
+  }
+
+  .card-resident__name {
+    font-size: 1.625rem;
+  }
+
+  .card-resident__meta {
+    gap: var(--space-xs);
+    font-size: 1rem;
+  }
+
+  .card-resident__description {
+    font-size: 1rem;
+  }
+
+  .card-resident__compatibility li {
+    gap: var(--space-sm);
+    font-size: 1rem;
+  }
+
+  .card-resident__avatar {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+
+  .card-resident__description {
+    font-size: 1rem;
+  }
+
+  .card-resident__top {
+    gap: var(--space-xs);
+  }
+}
+
+/* Styles pour téléphone */
+@media (max-width: 768px) {
+  .card-resident--staff {
+    max-width: 350px;
+  }
+}

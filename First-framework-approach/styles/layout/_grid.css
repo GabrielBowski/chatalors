@@ -1,0 +1,17 @@
+/* _grid.css : helpers de grille simples */
+
+.grid {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+/* Exemple 2 colonnes sur desktop, 1 sur mobile */
+.grid--2 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .grid--2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

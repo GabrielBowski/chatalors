@@ -1,0 +1,37 @@
+/* 
+  CLASSES UTILITAIRES (helpers)
+  - Pour ne pas répéter les mêmes propriétés partout.
+  - Exemple : .container, .is-hidden, .text-center, etc.
+*/
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+}
+
+.container {
+  /* Largeur max de 70rem (1120px) pour le contenu principal */
+  width: min(70rem, 100% - 2 * var(--space-md));
+  margin-inline: auto;
+}
+
+/* Alignements */
+.text-center {
+  text-align: center;
+}
+
+/* Visibilité */
+.is-hidden {
+  display: none !important;
+}
+
+/* Espaces rapides (optionnel, gardez-le simple pour les étudiants) */
+.mt-lg {
+  margin-top: var(--space-lg);
+}
+.mb-lg {
+  margin-bottom: var(--space-lg);
+}

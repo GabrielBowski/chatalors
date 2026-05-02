@@ -1,0 +1,20 @@
+/* _layout.css : structure globale de la page */
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+}
+
+.hero {
+  padding: var(--space-xxl) 0;
+  background-color: var(--color-bg-alt);
+}
+
+.cards-section {
+  padding: var(--space-xxl) 0;
+}

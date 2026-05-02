@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chat'alors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Styles principaux (ne changez pas le chemin) -->
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+
+  <body class="page page--home">
+    <!--
+      COMPOSANT HEADER
+      ================
+      Source : components/header.html
+      Copier le contenu de ce fichier ici et adapter selon vos besoins
+    -->
+
+    <header class="header header--sticky">
+      <div class="header__logo">
+        <a href="index.html">
+          <img src="./assets/logo/logo.svg" alt="Retour à la page d'accueil" />
+        </a>
+      </div>
+
+      <!-- bouton burger -->
+      <button class="burger" id="burger" aria-label="Ouvrir le menu">
+        <img src="./assets/svg/burger-menu.svg" alt="Menu" id="burger-icon" />
+      </button>
+
+      <nav class="header__nav" id="nav">
+        <ul>
+          <li>
+            <a href="residents.html" class="header__link header__link--active"
+              >Nos résidents</a
+            >
+          </li>
+          <li>
+            <a href="pages/exemple-page.html" class="header__link">Menu</a>
+          </li>
+          <li>
+            <a href="pages/exemple-page.html" class="header__link">Règlement</a>
+          </li>
+          <li>
+            <a href="a_propos.html" class="header__link">À propos</a>
+          </li>
+          <li>
+            <a href="pages/exemple-page.html" class="button button--primary"
+              >Réserver</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="overlay" id="overlay"></div>
+
+    <main class="main">
+      <!--
+        COMPOSANT HERO
+        ==============
+      -->
+      <section class="hero">
+        <div class="hero__content_container">
+          <div class="hero__left">
+            <div class="title-wrapper decoration_tasse">
+              <h1 class="hero__title">
+                Bienvenue chez <span>Chat'alors</span>, le bar des félins !
+              </h1>
+            </div>
+            <p class="body">
+              Ici les chats sont les vrais patrons. À vous le café et les
+              pâtisseries, à eux les câlins. Un moment hors du temps garanti !
+            </p>
+            <div class="hero__boutons">
+              <div>
+                <a href="#" class="button button--primary hero__cta">
+                  Découvrir le concept
+                </a>
+              </div>
+              <div class="bouton-wrapper decoration_cuillere">
+                <a href="#" class="button button--secondary hero__cta">
+                  Réserver une table
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="hero__right">
+            <div class="image-wrapper decoration_vague2">
+              <div class="decoration_vague3">
+                <img
+                src="assets/images/home-hero-header_1.webp"
+                class="image_radius"
+                alt="Chat allongé sur un canapé"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--
+        COMPOSANT RESIDANTS
+        ==============
+      -->
+      <img class="nuage" src="./assets/svg/nuage2.svg" alt="" />
+      <div class="fond">
+        <section class="residents-homepage">
+          <svg  viewBox="0 0 54 115" class="decor-patte-section" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M25.1062 112.616C39.9062 111.816 50.9062 119.816 48.7062 105.516C46.5062 91.316 44.9062 52.516 48.7062 45.616C52.5062 38.716 57.5062 24.416 49.9062 19.516C48.1062 18.716 49.9062 11.916 43.4062 6.91604C36.9062 1.91604 35.2062 4.81604 32.2062 4.81604C29.8062 4.51604 26.3062 -2.58396 19.5062 1.01604C12.7062 4.51604 15.1062 11.316 12.7062 12.216C10.3062 13.116 -0.293757 13.516 0.00624336 24.216C0.306243 34.916 5.90624 47.616 3.50624 60.116C1.10624 72.616 3.80624 100.616 2.90624 103.516C2.00624 106.416 4.40624 113.816 25.0062 112.616H25.1062Z"
+              fill="currentColor" />
+            <path class="coussinnet"
+              d="M5.50605 18.016C7.20605 16.916 13.206 12.116 13.406 19.016C13.606 25.916 7.70605 30.716 6.40605 28.216C5.10605 25.716 -0.493954 22.116 5.50605 18.116V18.016Z"
+              fill="currentColor" />
+            <path class="coussinnet"
+              d="M26.8062 13.316C24.4062 13.616 15.9062 15.216 17.4062 9.71604C18.9062 4.21604 27.1062 2.51604 28.1062 4.91604C29.1062 7.41604 35.1062 12.316 26.8062 13.316Z"
+              fill="currentColor" />
+            <path class="coussinnet"
+              d="M40.9064 9.51605C43.2064 10.5161 49.0064 15.1161 45.9064 18.3161C42.8064 21.5161 36.8064 19.9161 37.6064 15.3161C38.4064 10.7161 38.0064 8.21605 41.0064 9.51605H40.9064Z"
+              fill="currentColor" />
+            <path class="coussinnet"
+              d="M49.7061 25.016C51.7061 25.316 53.3061 31.616 49.7061 33.916C46.1061 36.216 42.4061 23.916 49.7061 25.016Z"
+              fill="currentColor" />
+          </svg>
+          <div class="residents__container">
+            <div class="title__text">
+              <h2 class="">Nos résidents</h2>
+              <p class="body">
+                Nos résidents sont également à l'adoption, vous pouvez parcourir
+                leur profil, afin de peut-être trouvé votre nouveau compagnon !
+              </p>
+            </div>
+            <div class="container_card">
+              <article class="card-resident">
+                <div class="card-resident__content">
+                  <h2 class="card-resident__name">RONALD</h2>
+
+                  <div class="card-resident__meta">
+                    <span>Mâle</span>
+                    <span>-</span>
+                    <span>7 ans</span>
+                  </div>
+
+                  <p class="card-resident__description">
+                    Ronald est un chat très timide, il lui faudra du temps pour
+                    venir vers vous.
+                  </p>
+                </div>
+
+                <div class="card-resident__avatar">
+                  <img src="./assets/images/cat2.webp" alt="Photo de Ronald" />
+                </div>
+              </article>
+
+              <article class="card-resident">
+                <div class="card-resident__content">
+                  <h2 class="card-resident__name">NALA</h2>
+
+                  <div class="card-resident__meta">
+                    <span>Femelle</span>
+                    <span>-</span>
+                    <span>7 mois</span>
+                  </div>
+
+                  <p class="card-resident__description">
+                    Très sociable, Nala adore jouer avec tout ce qui traîne.
+                    Gares à vos affaires !
+                  </p>
+                </div>
+
+                <div class="card-resident__avatar">
+                  <img src="./assets/images/cat3.webp" alt="Photo de Ronald" />
+                </div>
+              </article>
+
+              <article class="card-resident">
+                <div class="card-resident__content">
+                  <h2 class="card-resident__name">ARNOLD</h2>
+
+                  <div class="card-resident__meta">
+                    <span>Mâle</span>
+                    <span>-</span>
+                    <span>10 ans</span>
+                  </div>
+
+                  <p class="card-resident__description">
+                    Il s'agit de notre doyen. Arnold n'hésitera pas à vous
+                    observer de loin.
+                  </p>
+                </div>
+
+                <div class="card-resident__avatar">
+                  <img src="./assets/images/cat5.webp" alt="Photo de Ronald" />
+                </div>
+              </article>
+
+              <article class="card-resident">
+                <div class="card-resident__content">
+                  <h2 class="card-resident__name">SPIKE</h2>
+
+                  <div class="card-resident__meta">
+                    <span>Mâle</span>
+                    <span>-</span>
+                    <span>1 ans</span>
+                  </div>
+
+                  <p class="card-resident__description">
+                    Spike est très sociable avec un peu de chance, il
+                    s'allongera sur vous.
+                  </p>
+                </div>
+
+                <div class="card-resident__avatar">
+                  <img src="./assets/images/cat8.webp" alt="Photo de Ronald" />
+                </div>
+              </article>
+            </div>
+            <a href="#" class="button button-border">Voir tous nos résidents</a>
+          </div>
+          <svg viewBox="0 0 96 94" fill="currentColor" class="decor-grille-rond"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M1.6 14.6006C1.6 18.8006 5.7 24.0006 9.1 26.5006C2.1 31.3006 -4.7 41.0006 7.6 47.8006C3.4 51.7006 -1.1 62.9006 6.1 68.3006C2.7 70.6006 0 78.6006 0 82.8006C0 90.1006 7.9 93.1006 15.2 93.1006C22.5 93.1006 22.6 87.6006 25.1 84.2006C29 96.2006 41.1 95.2006 46.5 87.8006C51.3 94.8006 65 93.6006 67.8 84.5006C70.1 87.9006 76 92.9006 80.1 92.9006C87.4 92.9006 93 87.4006 93 80.1006C93 72.8006 88.3 71.0006 84.9 68.5006C91.9 63.7006 93.3 53.8006 86.1 46.2006C90.6 44.1006 103.1 25.2006 83.5 25.2006C86.9 22.9006 95.4 21.5006 95.4 17.4006C95.4 10.1006 87.2 0.100601 79.9 0.100601C72.6 0.100601 70.1 3.3006 67.6 6.7006C65.9 -1.7994 51.1 -0.299399 46.4 6.7006C41.6 -0.299399 30.6 0.800601 25.2 6.7006C24.1 -0.199399 16.1 0.000600482 11.9 0.000600482C4.6 0.000600482 1.5 7.3006 1.5 14.6006H1.6ZM60 60.3006C60 58.8006 60.9 56.8006 62.4 56.8006C63.9 56.8006 66.3 58.4006 66.3 59.9006V61.5006C66.3 63.0006 65.1 65.3006 63.6 65.3006C62.1 65.3006 60.1 62.5006 60.1 61.0006V60.4006L60 60.3006ZM58.6 28.6006C58.6 26.2006 59.8 25.8006 61.3 25.8006C62.8 25.8006 65 26.2006 65 27.7006L65.2 29.3006C65.2 30.8006 65.1 33.1006 63.6 33.1006C62.1 33.1006 59.6 32.9006 58.6 29.3006V28.6006ZM43.4 46.2006C43.4 44.7006 45.7 42.4006 47.1 42.4006C48.5 42.4006 49.9 46.2006 49.9 47.7006V49.2006C49.9 50.7006 48.1 51.4006 46.6 51.4006C45.1 51.4006 43.4 48.5006 43.4 47.0006V46.3006V46.2006ZM27.1 59.7006C27.1 58.2006 28.9 57.3006 30.3 57.3006C31.7 57.3006 33.7 59.5006 33.7 61.0006V62.3006C33.7 63.8006 31.8 66.4006 30.3 66.4006C28.8 66.4006 27.1 63.8006 27.1 62.4006V59.7006ZM27.7 28.0006C27.7 26.5006 29.7 24.4006 31.2 24.4006C32.7 24.4006 34.1 26.9006 34.1 28.4006V29.5006C34.1 31.0006 32.1 32.9006 30.6 32.9006C29.1 32.9006 27.7 30.3006 27.7 28.8006V28.0006Z"
+          fill="currentColor"></path>
+        </svg>
+        </section>
+      </div>
+      <img
+        class="nuage nuage-inverse"
+        src="./assets/svg/nuage2.svg"
+        alt="Nuage inversé"
+      />
+      
+
+      <!--
+        COMPOSANT EVENEMENTS
+        ==============
+      -->
+      <section class="carrousel_container">
+        <svg viewBox="0 0 41 39" class="decor-patte-carrousel" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M32.4302 4.81645C35.5192 3.06845 41.0662 6.23645 37.7542 11.2055C34.4412 16.1745 26.1602 8.36645 32.4302 4.81645Z"
+            fill="currentColor" />
+          <path
+            d="M20.9552 0.284423C23.8642 -0.940577 29.4732 1.82242 26.1602 7.97442C22.8472 14.1264 18.1152 10.8134 18.1152 6.08142C18.1152 1.34942 18.7072 1.23042 20.9542 0.284423H20.9552Z"
+            fill="currentColor" />
+          <path
+            d="M6.25733 5.00445C8.21433 3.45545 14.8933 4.53145 15.1303 9.26345C15.3673 13.9954 12.1723 18.9645 8.15033 16.5985C4.12833 14.2325 3.41833 7.25245 6.25733 5.00445Z"
+            fill="currentColor" />
+          <path
+            d="M0.496112 18.8014C1.51911 17.1524 6.76611 17.3814 5.22811 21.4044C3.69011 25.4264 -1.63389 22.2324 0.496112 18.8014Z"
+            fill="currentColor" />
+          <path
+            d="M18.115 18.0804C23.858 15.9474 35.082 16.8964 37.342 18.9414C39.603 20.9864 45.219 32.2204 30.147 34.3344C23.241 35.3034 21.411 41.2234 12.799 36.7024C4.18696 32.1814 11.159 20.6634 18.115 18.0804Z"
+            fill="currentColor" />
+        </svg>
+        <div class="title__text">
+          <h2 class="">Nos évènements</h2>
+          <p class="body">
+            Afin de mieux vous rapprocher de nos résidents et de passer des moments inoubliables, nous vous proposons différents événements chaque semaine.
+          </p>
+        </div>
+        <div class="carrousel_deux">
+          <div class="tapa_deux" id="move">
+            <div class="item_deux">
+              <article class="card-agenda">
+                <div class="card-agenda__media">
+                  <img src="./assets/images/agenda-yoga.webp" alt="" />
+                  <div class="card-agenda__date">10/02</div>
+                </div>
+
+                <div class="card-agenda__content">
+                  <h4 class="card-agenda__title">Yoga avec les chats</h4>
+                  <p class="card-agenda__text">
+                    Pour vous détendre davantage, nos chats se feront plaisir de
+                    partager votre séance avec vous. Rendez-vous de 14h à 15h30.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="item_deux">
+              <article class="card-agenda">
+                <div class="card-agenda__media">
+                  <img src="./assets/images/agenda-lecture.webp" alt="" />
+                  <div class="card-agenda__date">26/02</div>
+                </div>
+
+                <div class="card-agenda__content">
+                  <h4 class="card-agenda__title">Atelier Lecture</h4>
+                  <p class="card-agenda__text">
+                    Amenez votre livre du moment, ou empruntez un livre dans
+                    notre bibliothèque. Un temps d'échange autour de vos
+                    lectures est prévu à 17h.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="item_deux">
+              <article class="card-agenda">
+                <div class="card-agenda__media">
+                  <img src="./assets/images/agenda-meal.webp" alt="" />
+                  <div class="card-agenda__date">Tous les jours</div>
+                </div>
+
+                <div class="card-agenda__content">
+                  <h4 class="card-agenda__title">Repas avec nos résidents</h4>
+                  <p class="card-agenda__text">
+                    Assistez au moment le plus attendus de nos félins : la
+                    distribution de pâtée ! Chaque jour à 11h et 18h, venez
+                    partager ce moment avec nos résidents.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="item_deux">
+              <article class="card-agenda">
+                <div class="card-agenda__media">
+                  <img src="./assets/images/agenda-diy.webp" alt="" />
+                  <div class="card-agenda__date">03/03</div>
+                </div>
+
+                <div class="card-agenda__content">
+                  <h4 class="card-agenda__title">
+                    Atelier DIY - jouets pour chats
+                  </h4>
+                  <p class="card-agenda__text">
+                    Papier, cartons, tissus... et si vous confectionnez le
+                    prochain jeu favori de nos résidents ou de votre chat ?
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="item_deux">
+              <article class="card-agenda">
+                <div class="card-agenda__media">
+                  <img src="./assets/images/agenda-rpg.webp" alt="" />
+                  <div class="card-agenda__date">14/03</div>
+                </div>
+
+                <div class="card-agenda__content">
+                  <h4 class="card-agenda__title">Atelier jeu de rôle</h4>
+                  <p class="card-agenda__text">
+                    Incarnez un chaton et combattez des ennemis redoutables !
+                    Jeu de rôle donjons et chatons. Les débutants sont également
+                    les bienvenus. Séance de 11h à 20h.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="item_deux">
+              <article class="card-agenda">
+                <div class="card-agenda__media">
+                  <img src="./assets/images/agenda-conquest.webp" alt="" />
+                  <div class="card-agenda__date">25/03</div>
+                </div>
+
+                <div class="card-agenda__content">
+                  <h4 class="card-agenda__title">
+                    Concours du chat le plus moche
+                  </h4>
+                  <p class="card-agenda__text">
+                    Qui a dit que le chat le plus moche, ne pouvait pas gagner
+                    un prix ? Venez voter pour votre futur roi ou reine !
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="cont_deux">
+            <div class="left_deux controls_deux" id="l">
+              <svg
+                class="arrow"
+                viewBox="0 0 50 50"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.6374 19.9708C10.8563 20.7522 10.4175 21.8118 10.4175 22.9167C10.4175 24.0215 10.8563 25.0811 11.6374 25.8625L24.9999 39.2271L38.3624 25.8625C39.177 25.05 39.5833 23.9833 39.5833 22.9167C39.5833 21.85 39.177 20.7833 38.3624 19.9708C37.5811 19.1897 36.5214 18.7509 35.4166 18.7509C34.3117 18.7509 33.2521 19.1897 32.4708 19.9708L24.9999 27.4396L17.5291 19.9708C16.7477 19.1897 15.6881 18.7509 14.5833 18.7509C13.4784 18.7509 12.4188 19.1897 11.6374 19.9708Z"
+                />
+              </svg>
+            </div>
+
+            <div class="right_deux controls_deux" id="r">
+              <svg
+                class="arrow"
+                viewBox="0 0 50 50"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.6374 19.9708C10.8563 20.7522 10.4175 21.8118 10.4175 22.9167C10.4175 24.0215 10.8563 25.0811 11.6374 25.8625L24.9999 39.2271L38.3624 25.8625C39.177 25.05 39.5833 23.9833 39.5833 22.9167C39.5833 21.85 39.177 20.7833 38.3624 19.9708C37.5811 19.1897 36.5214 18.7509 35.4166 18.7509C34.3117 18.7509 33.2521 19.1897 32.4708 19.9708L24.9999 27.4396L17.5291 19.9708C16.7477 19.1897 15.6881 18.7509 14.5833 18.7509C13.4784 18.7509 12.4188 19.1897 11.6374 19.9708Z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--
+        COMPOSANT FAQ
+        ==============
+      -->
+
+      <img class="nuage" src="./assets/svg/nuage3.svg" alt="" />
+      <div class="fond">
+        <section class="FAQ">
+          <div class="FAQ__container">
+            <div class="title__text__left">
+              <h2 class="">FAQ</h2>
+              <p class="body">
+                Nous avons rassemblé ici les réponses aux questions les plus
+                fréquentes afin que votre expérience soit aussi sereine que
+                possible, pour vous comme pour nos chats.
+              </p>
+            </div>
+
+            <svg  viewBox="0 0 87 90" class="decor_poisson" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M80.1221 6.69374C84.3221 9.29374 92.7221 22.3937 79.8221 38.0937C78.8221 39.5937 73.3221 48.2937 67.6221 42.3937C62.0221 36.4937 61.4221 32.9937 59.5221 34.9937C57.6221 36.9937 55.1221 37.5937 57.1221 39.9937C59.1221 42.3937 63.7221 59.9937 60.6221 59.6937C57.5221 59.3937 52.0221 42.3937 50.4221 43.9937C48.8221 45.5937 46.7221 47.1937 47.8221 48.7937C48.9221 50.3937 51.7221 63.9937 49.6221 64.2937C47.5221 64.5937 43.4221 51.0937 41.8221 52.6937C40.2221 54.2937 38.1221 55.5937 38.8221 57.4937C39.5221 59.3937 40.6221 69.6937 39.6221 73.4937C38.6221 77.2937 35.8221 85.7937 33.0221 87.3937C30.2221 88.9937 28.4221 91.8937 24.6221 86.5937C20.8221 81.2937 21.3221 71.6937 20.0221 69.6937C18.7221 67.6937 0.622054 67.1937 0.022054 60.7937C-0.577946 54.3937 11.2221 48.1937 16.2221 48.7937C21.2221 49.3937 24.9221 46.6937 28.1221 48.7937C31.3221 50.8937 33.0221 51.1937 34.3221 49.8937C35.6221 48.5937 36.5221 46.7937 34.3221 46.0937C32.1221 45.3937 23.2221 42.9937 21.2221 41.0937C19.2221 39.1937 38.6221 40.2937 40.5221 41.7937C42.4221 43.2937 42.5221 41.7937 43.1221 41.1937C43.7221 40.5937 46.1221 39.0937 44.2221 37.6937C42.3221 36.2937 28.3221 29.1937 24.6221 28.6937C20.9221 28.1937 28.4221 23.2937 47.5221 31.2937C49.6221 32.3937 49.5221 34.6937 51.3221 32.9937C53.1221 31.2937 53.8221 29.0937 53.0221 26.9937C52.2221 24.8937 42.7221 17.4937 45.2221 12.3937C51.8221 -1.00626 64.6221 -4.50626 80.1221 6.69374Z"
+                fill="currentColor" />
+            </svg>
+            <svg viewBox="0 0 81 112" class="decoration_queue_bleu" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M75.8561 98.5299C68.9561 90.3299 63.5561 81.0299 60.1561 70.9299C58.4561 66.0299 57.1561 60.5299 56.1561 55.2299C55.0561 49.8299 54.3561 44.4299 53.8561 39.0299C53.6561 36.3299 53.4561 33.6299 53.4561 30.8299C53.4561 29.4299 53.4561 28.1299 53.4561 26.7299C53.4561 25.1299 53.3561 23.3299 53.0561 21.7299C51.8561 15.0299 47.8561 8.8299 42.1561 4.82991C36.4561 0.829905 29.0561 -0.870096 21.8561 0.429904C14.5561 1.7299 7.95606 6.1299 3.55606 12.3299C1.45606 15.1299 -0.343936 19.3299 0.0560643 22.8299C0.156064 23.7299 0.456065 24.5299 0.756065 25.2299C1.15607 25.9299 1.65607 26.5299 2.35607 27.0299C3.65607 28.0299 5.45606 28.3299 7.95606 28.3299C9.95606 28.3299 11.4561 27.7299 12.5561 27.2299C13.6561 26.6299 14.3561 26.0299 14.8561 25.2299C15.8561 23.8299 16.2561 22.0299 17.0561 20.6299C18.7561 17.5299 21.5561 15.2299 24.6561 14.2299C26.1561 13.7299 27.9561 13.5299 29.6561 13.7299C31.3561 13.8299 33.0561 14.3299 34.5561 15.1299C37.6561 16.7299 40.1561 19.6299 41.2561 23.0299C41.8561 24.8299 41.8561 26.0299 41.9561 29.3299C42.0561 32.2299 42.2561 35.0299 42.4561 37.9299C42.9561 43.9299 43.6561 49.8299 44.7561 55.7299C45.3561 58.6299 45.9561 61.6299 46.5561 64.5299C47.2561 67.4299 48.0561 70.3299 48.9561 73.3299C52.7561 85.2299 59.1561 96.2299 67.3561 105.53C69.9561 108.63 73.1561 114.23 78.2561 109.03C83.7561 103.33 78.2561 101.23 76.0561 98.5299H75.8561Z"
+                fill="currentColor" />
+            </svg>
+
+            <div class="accordion_container">
+              <div class="accordion-item">
+                <div class="accordion-tab-container">
+                  <h2 class="body-bold">Faut-il réserver à l'avance ?</h2>
+                  <div class="accordion-caret-container">
+                    <span class="accordion-caret"
+                      ><img src="assets/svg/chevron.svg" alt="Chevron"
+                    /></span>
+                  </div>
+                </div>
+                <div class="accordion-item display">
+                  <p class="body">
+                    La réservation est fortement conseillée, surtout les
+                    week-ends et jours fériés, afin de garantir votre place et
+                    de limiter le nombre de visiteurs pour le confort des chats.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-tab-container">
+                  <h2 class="body-bold">Les enfants sont-ils acceptés ?</h2>
+                  <div class="accordion-caret-container">
+                    <span class="accordion-caret"
+                      ><img src="assets/svg/chevron.svg" alt="Chevron"
+                    /></span>
+                  </div>
+                </div>
+                <div class="accordion-item display">
+                  <p class="body">
+                    Oui, les enfants sont les bienvenus à partir de 8 ans sous
+                    la responsabilité d'un adulte. Nous demandons le respect des
+                    règles de calme et de douceur envers les chats.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-tab-container">
+                  <h2 class="body-bold">
+                    Peut-on toucher ou porter les chats ?
+                  </h2>
+                  <div class="accordion-caret-container">
+                    <span class="accordion-caret"
+                      ><img src="assets/svg/chevron.svg" alt="Chevron"
+                    /></span>
+                  </div>
+                </div>
+                <div class="accordion-item display">
+                  <p class="body">
+                    Les chats sont libres de venir à vous. Il est interdit de
+                    les forcer, de les porter sans autorisation ou de les
+                    déranger lorsqu'ils dorment ou mangent.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-tab-container">
+                  <h2 class="body-bold">Puis-je venir avec mon animal ?</h2>
+                  <div class="accordion-caret-container">
+                    <span class="accordion-caret"
+                      ><img src="assets/svg/chevron.svg" alt="Chevron"
+                    /></span>
+                  </div>
+                </div>
+                <div class="accordion-item display">
+                  <p class="body">
+                    Malheureusement non. Pour préserver la tranquillité et la
+                    sécurité de nos chats, les autres animaux ne sont pas admis.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-tab-container">
+                  <h2 class="body-bold">Peut-on adopter un chat ?</h2>
+                  <div class="accordion-caret-container">
+                    <span class="accordion-caret"
+                      ><img src="assets/svg/chevron.svg" alt="Chevron"
+                    /></span>
+                  </div>
+                </div>
+                <div class="accordion-item display">
+                  <p class="body">
+                    Certains de nos chats sont proposés à l'adoption en
+                    partenariat avec la SPA. N'hésitez pas à nous demander plus
+                    d'informations sur place ou par téléphone. Vous trouverez
+                    plus d'informations dans la page dédiés à "Nos résidents".
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div>
+        <img
+          class="nuage nuage-inverse"
+          src="./assets/svg/nuage3.svg"
+          alt="Nuage inversé"
+        />
+      </div>
+        
+
+      
+    </main>
+
+   
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-top-left">
+          <div>
+            <h3>Newsletter</h3>
+            <p>Pour être informer de tous nos évènements :</p>
+          </div>
+          <div class="container-form">
+            <form>
+              <input type="email" placeholder="Email" required />
+              <button type="submit">S'inscrire à la newsletter</button>
+            </form>
+          </div>
+        </div>
+        <div class="decor-flex">
+          <svg
+            viewBox="0 0 32 31"
+            fill="currentColor"
+            class="decor-footer"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.2101 0.0217685C13.6361 0.216769 21.0421 7.24877 15.0641 10.1528C7.02309 14.0588 7.29909 5.89877 8.31309 3.69877C9.32709 1.49877 10.4841 -0.214231 12.2101 0.0217685Z"
+              fill="currentColor"
+            ></path>
+            <path
+              d="M24.2571 9.48076C25.9251 9.98376 28.3141 15.5228 22.9471 16.7038C17.5801 17.8838 18.0951 12.5018 19.0401 11.1038C19.9861 9.70576 21.7041 8.71076 24.2561 9.48076H24.2571Z"
+              fill="currentColor"
+            ></path>
+            <path
+              d="M26.0269 19.5998C27.3679 18.5088 30.0269 19.1718 30.9409 20.4908C31.8549 21.8098 30.1109 24.6468 27.7279 24.2148C25.3449 23.7828 23.3209 21.8008 26.0269 19.5998Z"
+              fill="currentColor"
+            ></path>
+            <path
+              d="M1.44711 5.32776C2.61211 4.45476 4.83811 5.71177 4.58211 7.12677C4.32511 8.54177 3.21611 10.4168 1.42911 9.24676C-0.357893 8.07676 0.290106 6.19476 1.44711 5.32776Z"
+              fill="currentColor"
+            ></path>
+            <path
+              d="M12.408 13.4728C16.056 15.4178 26.782 23.5878 23.263 28.3528C19.743 33.1178 11.602 28.5278 9.93303 27.1258C8.26403 25.7248 -0.89397 20.6758 0.0710299 16.3638C1.03603 12.0518 3.55703 8.75376 12.408 13.4728Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+
+          <div class="footer-top-right">
+            <div>
+              <h3>Horaires</h3>
+              <ul>
+                <li>Du mardi au samedi de <span>11h à 21h30</span></li>
+                <li>Le dimanche de <span>10h à 14h</span></li>
+                <li>Fermé le lundi</li>
+              </ul>
+            </div>
+            <div class="container-butons-schedule">
+              <a href="#" class="button button--secondary hero__cta">
+                Écrire
+              </a>
+              <a href="#" class="button button--secondary hero__cta">
+                Appeler
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Plan du site</a>
+      </div>
+    </footer>
+
+    <!-- Script principal (facultatif) -->
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/menu.js"></script>
+  </body>
+</html>

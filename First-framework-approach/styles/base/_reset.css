@@ -1,0 +1,113 @@
+/* Reset / normalize léger pour partir sur une base propre */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* Définir explicitement la taille de base (16px par défaut) */
+  font-size: 16px;
+  /* Permet aux utilisateurs d'agrandir/réduire avec leur navigateur */
+  -webkit-text-size-adjust: 100%;
+}
+
+html,
+body {
+  margin: auto 0;
+  padding: 0;
+  background-color: var(--color-text-clear);
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+}
+
+button {
+  font: inherit;
+}
+
+section {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: var(--space-max) var(--space-max);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.section_main h1 {
+  text-align: center;
+  padding-bottom: var(--space-xl);
+}
+
+.section_main h2 {
+  text-align: center;
+  padding-bottom: var(--space-xl);
+}
+
+ol li + li {
+  margin-top: 16px;
+}
+ol li::marker {
+  color: #c24c6a;
+  font-size: 48px;
+  font-family: var(--font-heading-family);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.nuage {
+  width: 100%; 
+  height: auto; 
+  display: block; 
+  margin-bottom: -5px;
+}
+
+.nuage-inverse {
+  transform: rotate(180deg); /* tourne l'image de 90 degrés */
+  display: block; /* pour éviter les décalages inline */
+  width: 100%; /* optionnel selon si tu veux qu'elle remplisse le conteneur */
+  height: auto;
+  margin-bottom: 0px !important;
+  margin-top: -5px;
+}
+
+.groupenuage {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Styles pour tablette */
+@media (max-width: 1024px) {
+  section {
+    padding: var(--space-mxl) var(--space-md);
+  }
+  ol li::marker {
+  font-size: 30px;
+
+}
+}
+
+/* Styles pour mobile */
+@media (max-width: 768px) {
+  section {
+    padding: var(--space-md) var(--space-md);
+  }
+
+}

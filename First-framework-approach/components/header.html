@@ -1,0 +1,58 @@
+<!--
+  COMPOSANT HEADER
+  =================
+  
+  💡 PARALLÈLE AVEC FIGMA :
+  Dans Figma, vous créez un composant "Header" que vous pouvez réutiliser 
+  dans plusieurs frames. Ici, c'est pareil : ce fichier contient le HTML 
+  du header que vous pouvez copier-coller dans toutes vos pages.
+  
+  UTILISATION :
+  1. Ouvrir ce fichier
+  2. Copier tout le contenu (sauf ce commentaire)
+  3. Coller dans votre page HTML (index.html, pages/...)
+  4. Adapter le contenu selon vos besoins (liens, texte, etc.)
+  
+  BEM :
+  - Block : header
+  - Elements : header__logo, header__nav, header__link
+  - Modifiers : header--sticky (variation)
+-->
+
+<header class="header header--sticky">
+  <div class="header__logo">
+    <a href="index.html">
+      <img src="./assets/logo/logo.svg" alt="Retour à la page d'accueil" />
+    </a>
+  </div>
+
+  <!-- bouton burger -->
+  <button class="burger" id="burger" aria-label="Ouvrir le menu">
+    <img src="./assets/svg/burger-menu.svg" alt="Menu" id="burger-icon" />
+  </button>
+
+  <nav class="header__nav" id="nav">
+    <ul>
+      <li>
+        <a href="residents.html" class="header__link header__link--active"
+          >Nos résidents</a
+        >
+      </li>
+      <li>
+        <a href="pages/exemple-page.html" class="header__link">Menu</a>
+      </li>
+      <li>
+        <a href="pages/exemple-page.html" class="header__link">Règlement</a>
+      </li>
+      <li>
+        <a href="a_propos.html" class="header__link">À propos</a>
+      </li>
+      <li>
+        <a href="pages/exemple-page.html" class="button button--primary"
+          >Réserver</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>
+<div class="overlay" id="overlay"></div>

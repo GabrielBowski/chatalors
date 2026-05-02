@@ -1,0 +1,175 @@
+@import url("../utils/_variables.css");
+
+@import url("../base/_typography.css");
+
+.carrousel_container{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.carrousel_deux {
+	width: 1100px;
+	margin: auto;
+	height: 500px;
+	margin-top: 40px;
+	overflow: hidden;
+}
+
+.tapa_deux {
+	display: flex;
+	flex-direction: row;
+	gap: var(--space-mxl);
+	width: 2200px;
+	transition: .9s all;
+}
+
+@media screen and (min-width: 1024px) {
+	.cont_deux {
+		position: absolute;
+		left: 10%;
+		top: 60% !important;
+		width: 80% !important;
+	}
+}
+
+
+.cont_deux {
+	position: absolute;
+	width: 1100px;
+	top: 190px;
+}
+
+.controls_deux {
+	width: var(--space-max);
+	height: var(--space-max);
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: var(--color-accent1);
+}
+
+.left_deux{
+float: left;
+}
+
+.right_deux{
+float: right;
+}
+
+.item_deux {
+	float: left;
+	/* margin-left: var(--space-mxl); */
+	cursor: pointer;
+	transition: 1s all;
+}
+
+.item_deux:hover {
+	margin-top: -5px;
+}
+
+.arrow {
+	width: var(--space-max);
+	height: var(--space-max);
+	fill: var(--color-text-clear);
+	transition: 0.2s;
+}
+
+.controls_deux:hover .arrow {
+	fill: black;
+}
+
+.left_deux .arrow {
+	transform: rotate(90deg);
+}
+
+.right_deux .arrow {
+	transform: rotate(-90deg);
+}
+
+.controls_deux:hover {
+	background-color: var(--color-secondary);
+}
+
+/* Styles pour tablette */
+@media (max-width: 1024px) {
+	.carrousel_container{
+		gap: 30px;
+	}
+	
+	.carrousel_deux {
+		display: flex;
+		flex-direction: column;
+		width: 70%;
+		margin: auto;
+		height: 550px;
+	}
+	.cont_deux {
+		position: absolute;
+		left: 10%;
+		top: 45% !important;
+		width: 80% !important;
+	}
+
+	.controls_deux {
+		width: var(--space-xxxl);
+		height: var(--space-xxxl);
+	}
+
+	.arrow {
+		width: var(--space-xxxl);
+		height: var(--space-xxxl);
+	}
+}
+
+/* Styles pour mobile */
+@media (max-width: 768px) {
+	.carrousel_deux {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin: auto;
+	}
+	
+
+  .cont_deux_propos {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 75% !important;
+  }
+
+    .cont_deux {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 93% !important;
+  }
+
+	.controls_deux {
+		width: var(--space-xxl);
+		height: var(--space-xxl);
+	}
+
+	.arrow {
+		width: var(--space-xxl);
+		height: var(--space-xxl);
+	}
+
+	.carrousel_container{
+		margin-bottom: var(--space-xxl);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

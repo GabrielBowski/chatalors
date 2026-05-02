@@ -1,0 +1,111 @@
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+  grid-template-rows: auto; /* hauteur adaptée au contenu */
+  column-gap: 15px;
+  grid-template-areas:
+    "c1 c2 c3"
+    "img img img"
+    "c4 c5 c6";
+}
+
+.timeline-grid > .cellule:nth-child(1) {
+  grid-area: c1;
+}
+.timeline-grid > .cellule:nth-child(2) {
+  grid-area: c2;
+}
+.timeline-grid > .cellule:nth-child(3) {
+  grid-area: c3;
+}
+.timeline-grid > .image-cellule {
+  grid-area: img;
+}
+.timeline-grid > .cellule:nth-child(4) {
+  grid-area: c4;
+}
+.timeline-grid > .cellule:nth-child(5) {
+  grid-area: c5;
+}
+.timeline-grid > .cellule:nth-child(6) {
+  grid-area: c6;
+}
+
+.cellule {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+  color: #023047;
+  padding: 10px;
+}
+
+.image-cellule {
+  height: auto;
+}
+
+.trait_gauche {
+  border-left: 5px dashed var(--color-accent1);
+}
+
+.padding-top {
+  padding-top: 20px;
+}
+
+.padding-bottom {
+  padding-bottom: 20px;
+}
+
+
+.line-desktop {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) { 
+  .timeline-grid {
+    display: grid;
+    grid-template-columns: 40px 1fr; 
+    grid-template-areas:
+      "img c1"
+      "img c2"
+      "img c3";
+    row-gap: 20px; /* On peut remettre de l'espace, ça ne cassera plus le trait ! */
+  }
+.line-desktop {
+display: none;}
+
+  /* Transforme la cellule en "rail" infini */
+  .timeline-grid > .image-cellule {
+    grid-area: img;
+    height: 100%;
+    /* On met ton SVG en fond */
+    background-image: url('../../assets/svg/timeline_line_vertical.svg');
+    background-repeat: repeat-y; /* RÉPÈTE le motif verticalement sans le déformer */
+    background-position: center;
+    background-size: contain; /* Garde la largeur originale (31px) */
+  }
+
+  /* Le trait horizontal "branche" (pour toucher le rail) */
+  .cellule {
+    position: relative;
+    padding: 10px 0 10px 15px;
+    border-left: none !important;
+  }
+
+  .cellule::before {
+    content: "";
+    position: absolute;
+    top: 25px;    /* Aligné avec le milieu de ton titre h4 */
+    left: -15px;  /* Ajuste pour toucher le motif central */
+    width: 15px;
+    height: 2px;
+    background-color: #C24C6A;
+  }
+
+  /* Reste du placement identique... */
+  .timeline-grid > .cellule:nth-child(2) { grid-area: c1 !important; }
+  .timeline-grid > .cellule:nth-child(5) { grid-area: c2 !important; }
+  .timeline-grid > .cellule:nth-child(6) { grid-area: c3 !important; }
+  .timeline-grid > :nth-child(1), .timeline-grid > :nth-child(3), .timeline-grid > :nth-child(7) { display: none !important; }
+}

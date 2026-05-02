@@ -1,0 +1,174 @@
+<!--
+  COMPOSANT CARD (Carte)
+  =======================
+  
+  💡 PARALLÈLE AVEC FIGMA :
+  Dans Figma, vous créez un composant "Card" que vous dupliquez pour 
+  créer plusieurs cartes avec du contenu différent. Ici, c'est pareil :
+  vous copiez-collez ce composant plusieurs fois et vous changez le contenu.
+  
+  UTILISATION :
+  1. Ouvrir ce fichier
+  2. Copier tout le contenu (sauf ce commentaire)
+  3. Coller dans votre page HTML dans la section des cartes
+  4. Dupliquer pour créer plusieurs cartes
+  5. Adapter le contenu de chaque carte (image, titre, texte, lien)
+  
+  BEM :
+  - Block : card
+  - Elements : card__image, card__title, card__text, card__link
+-->
+
+<!-- card page d'accueil -->
+
+<article class="card-resident">
+  <div class="card-resident__content">
+    <h2 class="card-resident__name">RONALD</h2>
+
+    <div class="card-resident__meta">
+      <span>Mâle</span>
+      <span>-</span>
+      <span>7 ans</span>
+    </div>
+
+    <p class="card-resident__description">
+      Ronald est un chat très timide, il lui faudra du temps pour venir vers
+      vous.
+    </p>
+  </div>
+
+  <div class="card-resident__avatar">
+    <img src="https://placehold.co/154x154" alt="Photo de Ronald" />
+  </div>
+</article>
+
+<!-- card page nos résidents -->
+
+<article class="card-resident card-resident--detailed">
+  <div class="card-resident__top">
+    <div class="card-resident__info">
+      <h2 class="card-resident__name">JACKY</h2>
+
+      <div class="card-resident__meta">
+        <span>Mâle</span>
+        <span>-</span>
+        <span>3 ans</span>
+      </div>
+
+      <ul class="card-resident__compatibility">
+        <li class="is-ok">
+          <span class="icon"></span>
+          Enfants
+        </li>
+        <li class="is-not-ok">
+          <span class="icon"></span>
+          Chiens
+        </li>
+      </ul>
+    </div>
+
+    <div class="card-resident__image">
+      <img src="https://placehold.co/216x216" alt="Photo de Jacky" />
+    </div>
+  </div>
+
+  <p class="card-resident__description">
+    Jacky est un chat affectueux et joueur. Toujours partant pour une séance de
+    jeu ou un moment de tendresse...
+  </p>
+</article>
+
+<!-- card notre équipe -->
+
+<article class="card-resident card-resident--staff">
+  <div class="card-resident__top">
+    <div class="card-resident__info">
+      <h2 class="card-resident__name">ALEXANDRE</h2>
+      <p class="card-resident__role">Gérant de Chat'alors</p>
+    </div>
+
+    <div class="card-resident__image">
+      <img src="https://placehold.co/204x204" alt="Alexandre" />
+    </div>
+  </div>
+
+  <p class="card-resident__description">
+    Alexandre est à l’origine de l’esprit de Chat’alors...
+  </p>
+</article>
+
+
+<!--   card agenda evenement  -->
+
+<article class="card-agenda">
+  <div class="card-agenda__media">
+    <img src="..." alt="" />
+    <div class="card-agenda__date">26/02</div>
+  </div>
+
+  <div class="card-agenda__content">
+    <h4 class="card-agenda__title">Atelier Lecture</h4>
+    <p class="card-agenda__text">Amenez votre livre du moment...</p>
+  </div>
+</article>
+
+
+<article class="card-resident card-resident--detailed">
+      <div class="card-resident__top">
+        <div class="card-resident__info">
+          <h2 class="card-resident__name">JACKY</h2>
+
+          <div class="card-resident__meta">
+            <span>Mâle</span>
+            <span>-</span>
+            <span>3 ans</span>
+          </div>
+
+          <ul class="card-resident__compatibility">
+            <li class="is-ok">
+              <span class="icon"></span>
+              Enfants
+            </li>
+            <li class="is-not-ok">
+              <span class="icon"></span>
+              Chiens
+            </li>
+          </ul>
+        </div>
+
+        <div class="card-resident__image">
+          <img src="https://placehold.co/216x216" alt="Photo de Jacky" />
+        </div>
+      </div>
+
+      <p class="card-resident__description">
+        Jacky est un chat affectueux et joueur. Toujours partant pour une
+        séance de jeu ou un moment de tendresse...
+      </p>
+    </article>
+
+    <!--
+        COMPOSANT CARD
+        ==============
+        Source : components/card.html
+        Copier le contenu de ce fichier ici, puis dupliquer pour créer plusieurs cartes
+        Adapter le contenu de chaque carte (image, titre, texte, lien)
+      -->
+    <section class="cards-section">
+      <div class="container">
+        <h2 class="section-title">Section de cartes</h2>
+        <div class="cards-list">
+          <!-- Première carte (copiée depuis components/card.html) -->
+          <article class="card">
+            <img src="assets/images/example.jpg" alt="Alt image" class="card__image" />
+            <h3 class="card__title">Titre carte</h3>
+            <p class="card__text">
+              Texte de la carte. Déclinez selon votre maquette.
+            </p>
+            <a href="#" class="card__link">En savoir plus</a>
+          </article>
+
+          <!-- Dupliquez cette carte pour en créer d'autres avec du contenu différent -->
+        </div>
+      </div>
+    </section>
